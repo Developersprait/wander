@@ -1,0 +1,15 @@
+.slider {
+  width: 1281px;
+}
+
+#slide1 {
+  background: url(../img/mount.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mySlides {
+  display: none;
+  background-size: cover;
+}/*# sourceMappingURL=header.css.map */

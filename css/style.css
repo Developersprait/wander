@@ -9,4 +9,11 @@ body {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+}
+
+#slide1 {
+  background: url(../img/mount.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
