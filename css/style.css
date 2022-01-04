@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -11,9 +12,116 @@ body {
   margin: 0 auto;
 }
 
-#slide1 {
+.header {
+  width: 100%;
+}
+.header__slider {
+  width: 1281px;
+  height: 721px;
   background: url(../img/mount.jpg);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-position: bottom;
+  margin: 0 auto;
+}
+.header__btn-menu {
+  display: none;
+  background: url(..img/burger.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  z-index: 20;
+}
+.header__wrapper {
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__box {
+  z-index: 10;
+  width: 405px;
+  margin: 0 auto;
+}
+.header__logo {
+  height: 200px;
+  margin-bottom: 57px;
+}
+.header__logo img {
+  width: 405px;
+  height: 175px;
+  padding-right: 6px;
+  filter: drop-shadow(4px 10px 6px black);
+}
+
+.hero__title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 58px;
+  color: #fff;
+  letter-spacing: 5px;
+  filter: drop-shadow(4px 10px 6px black);
+  margin-bottom: 90px;
+}
+.hero__btn {
+  width: 222px;
+  height: 71px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.59);
+  border: 2px solid white;
+  padding-top: 22px;
+}
+.hero__wrapper {
+  margin-left: 34px;
+}
+.hero__link {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 22px;
+  letter-spacing: 4px;
+}
+
+.menu {
+  position: relative;
+  z-index: 10;
+}
+.menu-box {
+  padding-left: 0;
+}
+.menu li {
+  display: inline-block;
+  padding-top: 10px;
+}
+.menu a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+.menu a:hover {
+  color: #000;
+}
+
+.socials a img {
+  width: 24px;
+  height: 24px;
+  margin-top: 20px;
+  margin-right: -14px;
+}
+
+.socials a img:hover {
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */
