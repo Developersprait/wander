@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/blogo.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,7 +23,7 @@
             <div class="header__slider">
                 <nav class="nav">
                     <section class="menu">
-                        <div class="container">
+                        <div class="container__s">
                             <div class="header__wrapper">
                                 <div class="menu-links">
                                     <div class="header__btn-menu">
@@ -57,9 +59,34 @@
             </div>
         </div>
     </header>
+    <section class="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <div class="about__text">
+                    <div class="about__title">O NASZEJ FIRMIE</div>
+                    <div class="about__descr">
+                        Proponujemy Państwu niezapomnianą wspólną podróż, podczas której dokonacie rzeczy, o których
+                        tylko marzyliście i których nie wyobrażaliście sobie jako możliwe. Nie marnuj swojego życia na
+                        oglądanie telenowel, sam nakręć fascynujący film.</div>
+                </div>
+                <div class="about__slider">
+                    <div id="slider">
+                        <div class="slide">1</div>
+                        <div class="slide">2</div>
+                        <div class="slide">3</div>
+                        <div class="slide">4</div>
+                        <div class="slide">5</div>
+                    </div>
+                    <input type="range" id="range" min="1" value="1" step="1" />
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slider2.js"></script>
 </body>
 
 </html>
