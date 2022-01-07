@@ -12,6 +12,7 @@ $('#slider').on('init reInit',function(event,slick){
   });
   
   $('#slider').slick({
+    variableWidth: true,
     slidesToShow:2,
     arrows:false,
     dots:false
