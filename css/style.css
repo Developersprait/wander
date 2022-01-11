@@ -188,4 +188,63 @@ body {
   background-position: top;
   width: 207px;
   height: 136px;
+}
+
+.footer {
+  height: 186px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.footer__wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__left img {
+  width: 38px;
+  height: 38px;
+  margin-right: 15px;
+}
+.footer__phone {
+  display: flex;
+  color: #fff;
+  margin-bottom: 23px;
+}
+.footer__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 35px;
+  letter-spacing: 1.4px;
+}
+.footer__mail {
+  display: flex;
+  color: #fff;
+}
+.footer__pay {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 23px;
+}
+.footer__pay-visa {
+  background: url("../img/labels/white/visa.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 49px;
+  height: 32px;
+  margin: 0 auto;
+}
+.footer__pay-master {
+  background: url("../img/labels/white/master.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 49px;
+  height: 32px;
+  margin: 0 auto;
+}
+.footer__socials img {
+  width: 38px;
+  height: 38px;
+  margin-right: 13px;
 }/*# sourceMappingURL=style.css.map */
