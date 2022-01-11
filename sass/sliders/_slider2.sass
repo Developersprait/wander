@@ -1,4 +1,4 @@
-
+@import '../vars/_mixins'
 .slide
     line-height: 136px
     text-align: center
@@ -9,12 +9,18 @@
 .slick-list
     margin: 0 -5px
 
-.slick-current
-    color: red
 #mps1
-    background: url(../img/wheel.jpg)
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: top
-    width: 207px
-    height: 136px
+    @include img('../img/wheel.jpg', 207px, 136px, cover)
+    margin-right: 15px
+#mps2
+    @include img('../img/sea.jpg', 207px, 136px, cover)
+    margin-right: 15px
+#mps3
+    @include img('../img/sarco.jpg', 207px, 136px, cover)
+    margin-right: 15px
+#mps4
+    @include img('../img/sea2.jpg', 207px, 136px, cover)
+    margin-right: 15px
+#mps5
+    @include img('../img/pripyat.jpg', 207px, 136px, cover)   
+    margin-right: 15px             

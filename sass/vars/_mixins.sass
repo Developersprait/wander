@@ -1,8 +1,7 @@
-@mixin img($url, $width, $height)  
+@mixin img($url, $width, $height, $size)  
     background: url($url)
     background-repeat: no-repeat
-    background-size: contain
-    background-position: center
+    background-size: $size
+    background-position: top
     width: $width
     height: $height      
-    margin: 0 auto
