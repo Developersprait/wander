@@ -1,5 +1,52 @@
+@import '../vars/_fonts'
 .header2
     height: 96px
     background: #000
-    &__top
+    &__phone
         display: flex
+        a
+            text-decoration: none
+        &-number
+            margin-top: 7px
+            margin-left: 9px
+            color: $yellow
+            font-family: $jojo
+            font-weight: 700
+            font-size: 11px
+            line-height: 11px
+            letter-spacing: 1.1px
+    &__top
+        &__wrapper
+            display: flex
+            justify-content: space-between
+        &__left
+            display: flex
+            justify-content: center
+            margin-top: 40px
+            img
+                width: 24px
+                height: 24px
+        &__mid
+            margin-top: 21px
+            img
+                width: 57px
+                height: 57px
+        &__right
+            display: flex
+            margin-top: 40px
+            img
+                width: 24px
+                height: 24px
+                margin-right: 9px
+    &__btn a
+        text-decoration: none
+        color: $yellow
+        font-family: $jojo
+        font-weight: 700
+        font-size: 11px
+        line-height: 11px
+        letter-spacing: 1.1px
+        text-transform: uppercase
+        margin-left: 31px
+    &__btn a:hover
+        opacity: 0.5    

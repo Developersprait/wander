@@ -139,8 +139,64 @@ body {
   height: 96px;
   background: #000;
 }
-.header2__top {
+.header2__phone {
   display: flex;
+}
+.header2__phone a {
+  text-decoration: none;
+}
+.header2__phone-number {
+  margin-top: 7px;
+  margin-left: 9px;
+  color: #DED500;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 11px;
+  letter-spacing: 1.1px;
+}
+.header2__top__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.header2__top__left {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.header2__top__left img {
+  width: 24px;
+  height: 24px;
+}
+.header2__top__mid {
+  margin-top: 21px;
+}
+.header2__top__mid img {
+  width: 57px;
+  height: 57px;
+}
+.header2__top__right {
+  display: flex;
+  margin-top: 40px;
+}
+.header2__top__right img {
+  width: 24px;
+  height: 24px;
+  margin-right: 9px;
+}
+.header2__btn a {
+  text-decoration: none;
+  color: #DED500;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 11px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  margin-left: 31px;
+}
+.header2__btn a:hover {
+  opacity: 0.5;
 }
 
 .about {
