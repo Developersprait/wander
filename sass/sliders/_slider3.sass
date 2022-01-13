@@ -1,0 +1,70 @@
+@import '../vars/_fonts'
+@import '../vars/_mixins'
+.slide3
+    width: 1280px
+    height: 594px
+    position: relative
+    margin: 0 auto
+.slider
+    &__box
+        text-align: center
+        position: absolute
+        bottom: 10%
+    &__text
+        font-family: $montserrat
+        font-weight: 700
+        font-size: 19px
+        line-height: 23px
+        letter-spacing: 1.9px
+        color: #fff
+
+#s1
+    @include img('../img/cher.jpg', 100%, 594px, cover)
+#s2
+    @include img('../img/ch1.jpg', 100%, 594px, cover)
+#s3
+    @include img('../img/ch2.jpg', 100%, 594px, cover)
+#s4
+    @include img('../img/ch3.jpg', 100%, 594px, cover)
+#s5
+    @include img('../img/stalk.jpg', 100%, 594px, cover)
+
+.slick-prev
+    left: 0 // левая стрелка остается с левой стороны слайдера
+    background: url('../img/ar2.png') 0 0 / 100% no-repeat
+
+.slick-next
+    right: 0 // правая стрелка переместилась справа от слайдера
+    background: url('../img/ar1.png') 0 0 / 100% no-repeat
+
+.slick-arrow
+    position: absolute
+    top: 40% // выравнивание по вертикали
+    margin: -15px 0 0 0 // корректировка вертикального выравнивания
+    z-index: 2 // стрелки сверху картинок
+    font-size: 0 // убираем надпись на дефолтной стрелке
+    width: 48px // ширина стрелки
+    height: 104px // высота стрелки
+    border: none
+.slick-dots
+    text-align: center
+    display: flex // поставить кнопки в ряд
+    justify-content: center // выровнять по центру
+    list-style: none // убираем черные маркеры
+    position: absolute
+    right: 40%
+    top: 80%
+.slick-dots button
+    background: transparent// цвет фона
+    border: solid 2px #fff // без рамки
+    border-radius: 50% // радиус закругления
+    height: 17px // высота точки
+    width: 17px // ширина точки
+    margin: 15px // отступы между точками
+    outline: none // убираем обводку
+    overflow: hidden
+    font-size: 0
+.slick-dots button:hover
+    cursor: pointer
+.slick-dots li[class="slick-active"] button
+    background: #fff 
