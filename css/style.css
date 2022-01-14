@@ -17,6 +17,28 @@ body {
   margin: 0 auto;
 }
 
+.shedule__btn {
+  position: absolute;
+  right: 0;
+  top: 84%;
+  box-shadow: -14px -18px 19px 7px rgba(255, 255, 255, 0.43);
+}
+.shedule__btn a {
+  text-decoration: none;
+}
+.shedule__btn-inner {
+  background-color: #000;
+  width: 272px;
+  height: 73px;
+  text-align: center;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 4.8px;
+  padding-top: 23px;
+}
+
 .header {
   width: 100%;
 }
@@ -135,6 +157,9 @@ body {
   opacity: 0.5;
 }
 
+.header2__hero {
+  margin-top: 150px;
+}
 .header2__phone {
   display: flex;
 }
@@ -154,6 +179,10 @@ body {
 .header2__top {
   height: 96px;
   background: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 .header2__top__wrapper {
   display: flex;
@@ -201,11 +230,17 @@ body {
 .header2__btn a:hover {
   opacity: 0.5;
 }
+
 .menu2 {
+  position: fixed;
   overflow: hidden;
   background: #fff;
   padding: 12px 0 0 0;
   height: 43px;
+  top: 0;
+  margin-top: 96px;
+  width: 100%;
+  z-index: 100;
 }
 
 .menu2 ul {

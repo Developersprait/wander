@@ -1,5 +1,7 @@
 @import '../vars/_fonts'
 .header2
+    &__hero
+        margin-top: 150px
     &__phone
         display: flex
         a
@@ -16,6 +18,10 @@
     &__top
         height: 96px
         background: #000
+        position: fixed
+        top: 0
+        width: 100%
+        z-index: 100
         &__wrapper
             display: flex
             justify-content: space-between
@@ -53,5 +59,3 @@
         margin-left: 31px
     &__btn a:hover
         opacity: 0.5
-    &__hero
-        
