@@ -1,26 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
-//slider
-let slideIndex = 0;
-showSlides();
+document.addEventListener('DOMContentLoaded', () => {
+    const shedule = document.querySelector('.shedule__btn');
 
-function showSlides() {
-    const slides = document.getElementsByClassName("mySlides");
-
-    if (!slides.length) {
-        return;
+    function fix() {
+        if (window.scrollY > 800) {
+            document.querySelector('.shedule__btn').style.cssText = 'position: fixed; right: 0; top:84%; box-shadow: -14px -18px 19px 7px rgb(255 255 255 / 43%):';
+            console.log('done');
+        }
     }
-
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    slideIndex += 1;
-
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 4000);
-}
+fix();
 });
-
