@@ -626,6 +626,11 @@ input[type=range]::-moz-range-thumb {
   margin: 0 auto;
 }
 
+.tour {
+  box-shadow: 0px 14px 20px -10px rgba(0, 0, 0, 0.5) inset;
+  margin-top: -75px;
+}
+
 .footer {
   height: 186px;
   background: rgba(0, 0, 0, 0.8);
