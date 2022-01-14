@@ -5,11 +5,18 @@
     height: 594px
     position: relative
     margin: 0 auto
+.title
+    margin-top: 155px
+    margin-bottom: 205px
+    font-family: $montserrat
+    font-weight: 900
+    font-size: 42px
+    letter-spacing: 5px
+    color: $yellow
 .slider
     &__box
         text-align: center
-        position: absolute
-        bottom: 10%
+        margin: 0 auto
     &__text
         font-family: $montserrat
         font-weight: 700
@@ -20,10 +27,12 @@
 
 #s1
     @include img('../img/cher.jpg', 100%, 594px, cover)
+    background-position: center
 #s2
     @include img('../img/ch1.jpg', 100%, 594px, cover)
 #s3
     @include img('../img/ch2.jpg', 100%, 594px, cover)
+    background-position: center
 #s4
     @include img('../img/ch3.jpg', 100%, 594px, cover)
 #s5
@@ -52,7 +61,7 @@
     justify-content: center // выровнять по центру
     list-style: none // убираем черные маркеры
     position: absolute
-    right: 40%
+    right: 41%
     top: 80%
 .slick-dots button
     background: transparent// цвет фона
@@ -67,4 +76,4 @@
 .slick-dots button:hover
     cursor: pointer
 .slick-dots li[class="slick-active"] button
-    background: #fff 
+    background: #fff
