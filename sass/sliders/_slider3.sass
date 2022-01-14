@@ -5,6 +5,9 @@
     height: 594px
     position: relative
     margin: 0 auto
+    -webkit-box-shadow: 1px 17px 10px 10px rgba(0, 0, 0, 0.2)
+    -moz-box-shadow: 1px 17px 10px 10px rgba(0, 0, 0, 0.2)
+    box-shadow: 1px 17px 10px 10px rgba(0, 0, 0, 0.2)
 .title
     margin-top: 155px
     margin-bottom: 205px
@@ -24,6 +27,15 @@
         line-height: 23px
         letter-spacing: 1.9px
         color: #fff
+    &__btn
+        width: 75px
+        height: 75px
+        margin: 0 auto
+        position: relative
+        top: -36px
+    &__bottom
+        width: 75px
+        height: 75px
 
 #s1
     @include img('../img/cher.jpg', 100%, 594px, cover)
@@ -61,8 +73,8 @@
     justify-content: center // выровнять по центру
     list-style: none // убираем черные маркеры
     position: absolute
-    right: 41%
-    top: 80%
+    right: 41.5%
+    top: 77%
 .slick-dots button
     background: transparent// цвет фона
     border: solid 2px #fff // без рамки
@@ -77,3 +89,6 @@
     cursor: pointer
 .slick-dots li[class="slick-active"] button
     background: #fff
+.arr
+    @include img('../img/ar3.png', 75px, 75px, cover)
+    margin: 0 auto
