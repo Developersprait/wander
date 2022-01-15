@@ -662,6 +662,38 @@ input[type=range]::-moz-range-thumb {
   content: "⚫";
   margin-right: 10px;
 }
+.tour__bottom-items {
+  width: 1062px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 63px;
+}
+.tour__bottom-item {
+  width: 228px;
+  text-align: center;
+}
+.tour__logo {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.tour__logo img {
+  width: 97px;
+  height: 97px;
+}
+.tour__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 3.6px;
+}
+.tour__descr {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+}
 
 .tour__item-right {
   margin-top: 105px;
