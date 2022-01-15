@@ -1,0 +1,26 @@
+@import '../vars/_fonts'
+@import '../vars/_mixins'
+
+.plan
+    height: 720px
+    @include img('../img/ch4.jpg', 100%, 720px, cover)
+    &__title
+        font-family: $montserrat
+        color: $yellow
+        font-weight: 900
+        font-size: 24px
+        letter-spacing: 2.4px
+        text-align: center
+        margin-top: 47px
+        margin-bottom: 40px
+    &__items
+        display: flex
+        justify-content: space-between
+        width: 1062px
+        margin: 0 auto
+    &__item
+        width: 254px
+        height: 402px
+        background-color: #c4c4c4      
+        border-radius: 10px  
+        text-align: center
