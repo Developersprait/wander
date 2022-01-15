@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   overflow-x: hidden;
@@ -629,6 +630,192 @@ input[type=range]::-moz-range-thumb {
 .tour {
   box-shadow: 0px 14px 20px -10px rgba(0, 0, 0, 0.5) inset;
   margin-top: -75px;
+}
+.tour__items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 105px;
+}
+.tour__item-left {
+  max-width: 562px;
+}
+.tour__item-left ul {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 2.4px;
+  padding-left: 0;
+  margin-top: 100px;
+}
+.tour__item-left li {
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 1.4px;
+  padding-left: 50px;
+  margin-bottom: 5px;
+}
+.tour__item-left li:before {
+  content: "⚫";
+  margin-right: 10px;
+}
+
+.tour__item-right {
+  margin-top: 105px;
+  margin-right: 50px;
+  max-height: 500px;
+}
+
+.tour__item-right::-webkit-scrollbar {
+  width: 10px;
+  height: 488px;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+}
+
+.tour__item-right::-webkit-scrollbar-thumb {
+  height: 20px;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+#l1 {
+  margin-top: 20px;
+}
+
+#a1 {
+  background: url("../img/penthouse.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 228px;
+  height: 157px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-right: 28px;
+}
+
+#a2 {
+  background: url("../img/s4/1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 228px;
+  height: 157px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-right: 28px;
+}
+
+#a3 {
+  background: url("../img/vehicle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 228px;
+  height: 157px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-right: 28px;
+}
+
+#a4 {
+  background: url("../img/s4/7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 228px;
+  height: 157px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-right: 28px;
+}
+
+#a5 {
+  background: url("../img/facade.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 228px;
+  height: 157px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-right: 28px;
+}
+
+#a6 {
+  background: url("../img/bottles.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 228px;
+  height: 157px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-right: 28px;
+}
+
+#a7 {
+  background: url("../img/s4/3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 228px;
+  height: 157px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-right: 28px;
+}
+
+#a8 {
+  background: url("../img/s4/13.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 228px;
+  height: 157px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-right: 28px;
+}
+
+#a9 {
+  background: url("../img/sarco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 228px;
+  height: 157px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-right: 28px;
+}
+
+#a10 {
+  background: url("../img/family.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 228px;
+  height: 157px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-right: 28px;
+}
+
+#a11 {
+  background: url("../img/s4/6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 228px;
+  height: 157px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-right: 28px;
 }
 
 .footer {

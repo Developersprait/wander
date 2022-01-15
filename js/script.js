@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const shedule = document.querySelector('.shedule__btn');
+    // const shedule = document.querySelector('.shedule__btn');
 
     function fix() {
-        if (window.scrollY > 800) {
-            document.querySelector('.shedule__btn').style.cssText = 'position: fixed; right: 0; top:84%; box-shadow: -14px -18px 19px 7px rgb(255 255 255 / 43%):';
-            console.log('done');
-        }
+        document.addEventListener('scroll', () => {
+            if (window.scrollY > 800) {
+                document.querySelector('.shedule__btn').style.cssText = 'position: fixed; right: 0; top:84%; box-shadow: -14px -18px 19px 7px rgb(255 255 255 / 43%):';
+                console.log('done');
+            }
+        });
+
     }
-fix();
+    fix();
 });

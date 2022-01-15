@@ -1,5 +1,70 @@
+@import '../vars/_mixins'
 .tour
     -webkit-box-shadow: 0px 14px 20px -10px rgba(0, 0, 0, 0.5) inset
     -moz-box-shadow: 0px 14px 20px -10px rgba(0, 0, 0, 0.5) inset
     box-shadow: 0px 14px 20px -10px rgba(0, 0, 0, 0.5) inset
     margin-top: -75px
+    &__items
+        display: flex
+        justify-content: space-between
+        margin-bottom: 105px
+    &__item
+        &-left
+            max-width: 562px
+            ul
+                font-family: $montserrat
+                font-weight: 900
+                font-size: 24px
+                line-height: 30px
+                letter-spacing: 2.4px
+                padding-left: 0
+                margin-top: 100px
+            li
+                list-style-type: none
+                font-family: $montserrat
+                font-weight: 400
+                font-size: 14px
+                line-height: 30px
+                letter-spacing: 1.4px
+                padding-left: 50px
+                margin-bottom: 5px
+            li:before
+                content: '\26AB'
+                margin-right: 10px
+.tour__item-right
+    margin-top: 105px
+    margin-right: 50px
+    max-height: 500px
+.tour__item-right::-webkit-scrollbar
+    width: 10px
+    height: 488px
+    border-radius: 10px
+    background-color: #d9d9d9
+.tour__item-right::-webkit-scrollbar-thumb
+    height: 20px
+    background-color: #000
+    border-radius: 10px
+#l1
+    margin-top: 20px
+#a1
+    @include a('../img/penthouse.png')
+#a2
+    @include a('../img/s4/1.png')
+#a3
+    @include a('../img/vehicle.png')
+#a4
+    @include a('../img/s4/7.png')
+#a5
+    @include a('../img/facade.png')
+#a6
+    @include a('../img/bottles.png')
+#a7
+    @include a('../img/s4/3.png')
+#a8
+    @include a('../img/s4/13.png')
+#a9
+    @include a('../img/sarco.jpg')
+#a10
+    @include a('../img/family.png')
+#a11
+    @include a('../img/s4/6.png')
