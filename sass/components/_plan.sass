@@ -16,11 +16,80 @@
     &__items
         display: flex
         justify-content: space-between
-        width: 1062px
+        width: 950px
         margin: 0 auto
     &__item
         width: 254px
         height: 402px
-        background-color: #c4c4c4      
-        border-radius: 10px  
+        background-color: #c4c4c4
+        border-radius: 10px
         text-align: center
+        transition: .3s all
+        &-text
+            margin-top: 24px
+            margin-bottom: 29px
+            font-family: $montserrat
+            font-weight: 700
+            font-size: 16px
+            line-height: 35px
+            letter-spacing: 1.6px
+        &-img1
+            @include img('../img/d1.jpg', 166px, 166px, cover)
+            margin: 0 auto
+            border: solid 4px #fff
+        &-img2
+            @include img('../img/d2.jpg', 166px, 166px, cover)
+            margin: 0 auto
+            border: solid 4px #fff
+        &-img3
+            @include img('../img/d3.jpg', 166px, 166px, cover)
+            margin: 0 auto
+            border: solid 4px #fff
+        &-btn
+            width: 166px
+            height: 40px
+            background-color: #fff
+            border-radius: 20px
+            margin: 0 auto
+            margin-top: 63px
+            transition: .3s all
+            a
+                text-decoration: none
+                width: 166px
+        &-btn:hover
+            background-color: #EFEDB4
+            -webkit-box-shadow: 0px 14px 4px -7px rgba(34, 60, 80, 0.2)
+            -moz-box-shadow: 0px 14px 4px -7px rgba(34, 60, 80, 0.2)
+            box-shadow: 0px 14px 4px -7px rgba(34, 60, 80, 0.2)
+
+        &-link
+            margin-top: 10px
+            font-family: $montserrat
+            font-weight: 700
+            font-size: 16px
+            letter-spacing: 1.6px
+            color: #000
+    &__link
+        margin-top: 29px
+        text-align: right
+        margin-right: 105px
+        a
+            text-decoration: none
+            color: $yellow
+            font-family: $montserrat
+            font-weight: 700
+            font-size: 24px
+            line-height: 35px
+            letter-spacing: 2.4px
+            transition: .3s all
+        a:hover
+            color: #fff
+    &__item:hover
+        // width: 271px
+        // height: 429px
+        -webkit-box-shadow: 20px 20px 38px -7px rgba(196, 196, 196, 0.5)
+        -moz-box-shadow: 20px 20px 38px -7px rgba(196, 196, 196, 0.5)
+        box-shadow: 20px 20px 38px -7px rgba(196, 196, 196, 0.5)
+        -webkit-box-shadow: -21px -20px 38px -7px rgba(196, 196, 196, 0.5)
+        -moz-box-shadow: -21px -20px 38px -7px rgba(196, 196, 196, 0.5)
+        box-shadow: -21px -20px 38px -7px rgba(196, 196, 196, 0.5)

@@ -617,7 +617,7 @@ input[type=range]::-moz-range-thumb {
 .plan__items {
   display: flex;
   justify-content: space-between;
-  width: 1062px;
+  width: 950px;
   margin: 0 auto;
 }
 .plan__item {
@@ -626,6 +626,93 @@ input[type=range]::-moz-range-thumb {
   background-color: #c4c4c4;
   border-radius: 10px;
   text-align: center;
+  transition: 0.3s all;
+}
+.plan__item-text {
+  margin-top: 24px;
+  margin-bottom: 29px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 35px;
+  letter-spacing: 1.6px;
+}
+.plan__item-img1 {
+  background: url("../img/d1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 166px;
+  height: 166px;
+  margin: 0 auto;
+  border: solid 4px #fff;
+}
+.plan__item-img2 {
+  background: url("../img/d2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 166px;
+  height: 166px;
+  margin: 0 auto;
+  border: solid 4px #fff;
+}
+.plan__item-img3 {
+  background: url("../img/d3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 166px;
+  height: 166px;
+  margin: 0 auto;
+  border: solid 4px #fff;
+}
+.plan__item-btn {
+  width: 166px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 63px;
+  transition: 0.3s all;
+}
+.plan__item-btn a {
+  text-decoration: none;
+  width: 166px;
+}
+.plan__item-btn:hover {
+  background-color: #EFEDB4;
+  box-shadow: 0px 14px 4px -7px rgba(34, 60, 80, 0.2);
+}
+.plan__item-link {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  color: #000;
+}
+.plan__link {
+  margin-top: 29px;
+  text-align: right;
+  margin-right: 105px;
+}
+.plan__link a {
+  text-decoration: none;
+  color: #DED500;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 2.4px;
+  transition: 0.3s all;
+}
+.plan__link a:hover {
+  color: #fff;
+}
+.plan__item:hover {
+  box-shadow: 20px 20px 38px -7px rgba(196, 196, 196, 0.5);
+  box-shadow: -21px -20px 38px -7px rgba(196, 196, 196, 0.5);
 }
 
 .footer {
