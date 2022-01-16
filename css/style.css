@@ -1034,4 +1034,51 @@ input[type=range]::-moz-range-thumb {
 #modal-plan3,
 #modal-link {
   display: none;
+}
+
+#modal-shedule {
+  width: 375px;
+  height: 375px;
+  border: solid 5px #fff;
+  padding: 0;
+  margin-top: 133px;
+  background-color: #000;
+  position: fixed;
+  right: 0;
+}
+#modal-shedule .fancybox-button {
+  left: 0;
+}
+#modal-shedule .fancybox-button svg {
+  color: #fff;
+}
+
+#modal-plan1,
+#modal-plan2,
+#modal-plan3,
+#modal-link {
+  width: 822px;
+  margin-top: 179px;
+  padding: 80px;
+}
+#modal-plan1 span,
+#modal-plan2 span,
+#modal-plan3 span,
+#modal-link span {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  letter-spacing: 1.8px;
+  margin-bottom: 20px;
+}
+#modal-plan1 p,
+#modal-plan2 p,
+#modal-plan3 p,
+#modal-link p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  line-height: 30px;
+  margin: 20px 0;
 }/*# sourceMappingURL=style.css.map */

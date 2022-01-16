@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // const shedule = document.querySelector('.shedule__btn');
+    const sheduleButton = document.querySelector('.shedule__btn'),
+        cross = document.querySelector('.fancybox-button');
 
     function fix() {
         document.addEventListener('scroll', () => {
@@ -10,5 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     }
+    function shedule(shedule, cross) {
+        shedule.addEventListener('click', () => {
+            shedule.style.display = 'none';
+        });
+        cross.addEventListener('click', () => {
+            shedule.style.display = 'block';
+        });
+    }
     fix();
+    shedule(sheduleButton, cross);
+
 });
