@@ -1026,4 +1026,12 @@ input[type=range]::-moz-range-thumb {
   width: 75px;
   height: 75px;
   margin: 0 auto;
+}
+
+#modal-shedule,
+#modal-plan1,
+#modal-plan2,
+#modal-plan3,
+#modal-link {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
