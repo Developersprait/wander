@@ -1,0 +1,42 @@
+@import '../vars/_fonts'
+@import '../vars/_mixins'
+.rules
+    height: 1334px
+    @include img('../img/resquer.jpg', 100%, 1334px, cover)
+    background-position: right
+    z-index: 1
+    &__title
+        text-align: center
+        font-family: $montserrat
+        font-weight: 900
+        font-size: 34px
+        letter-spacing: 3.4px
+        margin-top: 90px
+        margin-bottom: 60px
+    &__radiation
+        @include img('../img/labels/yellow/radiation.png', 1000px, 1000px, cover)
+        margin: 0 auto
+    &__items
+        display: flex
+        justify-content: space-between
+        &-left
+        &-right
+    &__item
+        display: flex
+        &-img1
+            @include rules('../img/labels/list.png')
+        &-img2
+            @include rules('../img/labels/18.png')
+        &-img3
+            @include rules('../img/labels/alc.png')
+        &-img4
+            @include rules('../img/labels/med.png')
+        &-img5
+            @include rules('../img/labels/radia.png')
+        &-img6
+            @include rules('../img/labels/wear.png')
+        &-img7
+            @include rules('../img/labels/spek.png')
+        &-img8
+            @include rules('../img/labels/man.png')                            
+                            

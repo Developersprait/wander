@@ -715,6 +715,36 @@ input[type=range]::-moz-range-thumb {
   box-shadow: -21px -20px 38px -7px rgba(196, 196, 196, 0.5);
 }
 
+.rules {
+  height: 1334px;
+  background: url("../img/resquer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 1334px;
+  background-position: right;
+  z-index: 1;
+}
+.rules__title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 34px;
+  letter-spacing: 3.4px;
+  margin-top: 90px;
+  margin-bottom: 60px;
+}
+.rules__radiation {
+  background: url("../img/labels/yellow/radiation.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+}
+
 .footer {
   height: 186px;
   background: rgba(0, 0, 0, 0.8);
