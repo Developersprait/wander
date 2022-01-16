@@ -921,7 +921,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 #s1 {
-  background: url("../img/cher.jpg");
+  background: url("../img/ch5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -1042,7 +1042,12 @@ input[type=range]::-moz-range-thumb {
   border: solid 5px #fff;
   padding: 0;
   margin-top: 133px;
-  background-color: #000;
+  background: url("../img/ch6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 375px;
+  height: 375px;
   position: fixed;
   right: 0;
 }
