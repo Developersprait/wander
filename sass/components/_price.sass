@@ -1,2 +1,58 @@
 @import '../vars/_fonts'
 @import '../vars/_mixins'
+.price
+    height: 900px
+    &__bg
+        @include img('../img/wheel2.png', 678px, 770px, cover)
+        position: absolute
+        right: 0
+        filter: drop-shadow(-5px -175px 179px black)
+        z-index: 1
+    &__wrapper
+        margin-top: 70px
+        padding-left: 160px
+        z-index: 90
+    &__value
+        font-family: $montserrat
+        font-weight: 700
+        font-size: 16px
+        letter-spacing: 1.6px
+        margin-bottom: 126px
+        strong
+            font-weight: 900
+            font-size: 24px
+    &__title
+        font-family: $montserrat
+        font-weight: 700
+        font-size: 36px
+        letter-spacing: 3.6px
+        margin-bottom: 43px
+    &__item
+        display: flex
+    &__img1
+        @include img('../img/labels/chek.png', 62px, 62px, cover)
+        margin-bottom: 37px
+    &__img2
+        @include img('../img/labels/alarm.png', 62px, 62px, cover)
+    &__text
+        margin-left: 24px
+        font-family: $montserrat
+        font-weight: 700
+        font-size: 14px
+        letter-spacing: 1.4px
+        line-height: 27px
+        b
+            font-weight: 900
+    &__logo
+        margin-left: 120px
+        margin-top: 120px
+        @include img('../img/blogo2.png', 340px, 53px, cover)
+        filter: drop-shadow(-5px 17px 10px black)
+        margin-bottom: 15px
+    &__descr
+        @include font($montserrat, 700, 16px, 35px, 1.6px)
+    &__name
+        @include font($montserrat, 900, 36px, 35px, 3.6px)
+        margin-left: 120px
+        filter: drop-shadow(0px 16px 10px black)
+        padding-bottom: 30px

@@ -716,13 +716,12 @@ input[type=range]::-moz-range-thumb {
 }
 
 .rules {
-  height: 1410px;
   background: url("../img/resquer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   width: 100%;
-  height: 1410px;
+  height: 1362px;
   background-position: right;
   z-index: 1;
 }
@@ -832,6 +831,108 @@ input[type=range]::-moz-range-thumb {
   font-size: 14px;
   letter-spacing: 1.4px;
   line-height: 30px;
+}
+.rules__item-l {
+  margin-bottom: 45px;
+}
+
+.price {
+  height: 900px;
+}
+.price__bg {
+  background: url("../img/wheel2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 678px;
+  height: 770px;
+  position: absolute;
+  right: 0;
+  filter: drop-shadow(-5px -175px 179px black);
+  z-index: 1;
+}
+.price__wrapper {
+  margin-top: 70px;
+  padding-left: 160px;
+  z-index: 90;
+}
+.price__value {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  margin-bottom: 126px;
+}
+.price__value strong {
+  font-weight: 900;
+  font-size: 24px;
+}
+.price__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 3.6px;
+  margin-bottom: 43px;
+}
+.price__item {
+  display: flex;
+}
+.price__img1 {
+  background: url("../img/labels/chek.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 37px;
+}
+.price__img2 {
+  background: url("../img/labels/alarm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 62px;
+  height: 62px;
+}
+.price__text {
+  margin-left: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  line-height: 27px;
+}
+.price__text b {
+  font-weight: 900;
+}
+.price__logo {
+  margin-left: 120px;
+  margin-top: 120px;
+  background: url("../img/blogo2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 340px;
+  height: 53px;
+  filter: drop-shadow(-5px 17px 10px black);
+  margin-bottom: 15px;
+}
+.price__descr {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 35px;
+  letter-spacing: 1.6px;
+}
+.price__name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 35px;
+  letter-spacing: 3.6px;
+  margin-left: 120px;
+  filter: drop-shadow(0px 16px 10px black);
+  padding-bottom: 30px;
 }
 
 .footer {

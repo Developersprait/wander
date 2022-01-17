@@ -1,12 +1,12 @@
-@mixin img($url, $width, $height, $size)  
+@mixin img($url, $width, $height, $size)
     background: url($url)
     background-repeat: no-repeat
     background-size: $size
     background-position: top
     width: $width
-    height: $height  
+    height: $height
 
-@mixin a($url)  
+@mixin a($url)
     background: url($url)
     background-repeat: no-repeat
     background-size: cover
@@ -16,11 +16,17 @@
     border-radius: 10px
     margin-bottom: 12px
     margin-right: 28px
-@mixin rules($url)   
-    background: url($url) 
+@mixin rules($url)
+    background: url($url)
     background-repeat: no-repeat
     background-size: cover
     background-position: center
     width: 62px
     height: 62px
     margin-right: 27px
+@mixin font($ff,$fw,$fz,$lh,$ls)
+    font-family: $ff
+    font-weight: $fw
+    font-size: $fz
+    line-height: $lh
+    letter-spacing: $ls
