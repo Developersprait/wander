@@ -716,13 +716,13 @@ input[type=range]::-moz-range-thumb {
 }
 
 .rules {
-  height: 1334px;
+  height: 1410px;
   background: url("../img/resquer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   width: 100%;
-  height: 1334px;
+  height: 1410px;
   background-position: right;
   z-index: 1;
 }
@@ -738,11 +738,100 @@ input[type=range]::-moz-range-thumb {
 .rules__radiation {
   background: url("../img/labels/yellow/radiation.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: top;
   width: 1000px;
-  height: 1000px;
+  height: auto;
   margin: 0 auto;
+}
+.rules__items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 65px;
+}
+.rules__item {
+  display: flex;
+  margin-bottom: 93px;
+}
+.rules__item-img1 {
+  background: url("../img/labels/list.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 62px;
+  height: 62px;
+  margin-right: 27px;
+}
+.rules__item-img2 {
+  background: url("../img/labels/18.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 62px;
+  height: 62px;
+  margin-right: 27px;
+}
+.rules__item-img3 {
+  background: url("../img/labels/alc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 62px;
+  height: 62px;
+  margin-right: 27px;
+}
+.rules__item-img4 {
+  background: url("../img/labels/med.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 62px;
+  height: 62px;
+  margin-right: 27px;
+}
+.rules__item-img5 {
+  background: url("../img/labels/radia.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 62px;
+  height: 62px;
+  margin-right: 27px;
+}
+.rules__item-img6 {
+  background: url("../img/labels/wear.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 62px;
+  height: 62px;
+  margin-right: 27px;
+}
+.rules__item-img7 {
+  background: url("../img/labels/spek.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 62px;
+  height: 62px;
+  margin-right: 27px;
+}
+.rules__item-img8 {
+  background: url("../img/labels/man.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 62px;
+  height: 62px;
+  margin-right: 27px;
+}
+.rules__item-text {
+  width: 310px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  line-height: 30px;
 }
 
 .footer {

@@ -1,8 +1,8 @@
 @import '../vars/_fonts'
 @import '../vars/_mixins'
 .rules
-    height: 1334px
-    @include img('../img/resquer.jpg', 100%, 1334px, cover)
+    height: 1410px
+    @include img('../img/resquer.jpg', 100%, 1410px, cover)
     background-position: right
     z-index: 1
     &__title
@@ -14,15 +14,15 @@
         margin-top: 90px
         margin-bottom: 60px
     &__radiation
-        @include img('../img/labels/yellow/radiation.png', 1000px, 1000px, cover)
+        @include img('../img/labels/yellow/radiation.png', 1000px, auto, contain)
         margin: 0 auto
     &__items
         display: flex
         justify-content: space-between
-        &-left
-        &-right
+        padding: 0 65px
     &__item
         display: flex
+        margin-bottom: 93px
         &-img1
             @include rules('../img/labels/list.png')
         &-img2
@@ -38,5 +38,12 @@
         &-img7
             @include rules('../img/labels/spek.png')
         &-img8
-            @include rules('../img/labels/man.png')                            
+            @include rules('../img/labels/man.png')  
+        &-text
+            width: 310px        
+            font-family: $montserrat
+            font-weight: 500
+            font-size: 14px
+            letter-spacing: 1.4px       
+            line-height: 30px               
                             
