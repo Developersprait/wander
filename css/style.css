@@ -935,6 +935,16 @@ input[type=range]::-moz-range-thumb {
   padding-bottom: 30px;
 }
 
+.gallery {
+  height: 900px;
+  background: url("../img/smoke.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 900px;
+}
+
 .footer {
   height: 186px;
   background: rgba(0, 0, 0, 0.8);
@@ -1246,6 +1256,71 @@ input[type=range]::-moz-range-thumb {
   width: 75px;
   height: 75px;
   margin: 0 auto;
+}
+
+.slide {
+  line-height: 136px;
+  text-align: center;
+  font-size: 60px;
+  margin: 0 5px;
+}
+
+.slick-slide {
+  width: 631px;
+}
+
+.slick-list {
+  margin: 0 -5px;
+}
+
+#mps1 {
+  background: url("../img/wheel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 207px;
+  height: 136px;
+  margin-right: 15px;
+}
+
+#mps2 {
+  background: url("../img/sea.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 207px;
+  height: 136px;
+  margin-right: 15px;
+}
+
+#mps3 {
+  background: url("../img/sarco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 207px;
+  height: 136px;
+  margin-right: 15px;
+}
+
+#mps4 {
+  background: url("../img/sea2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 207px;
+  height: 136px;
+  margin-right: 15px;
+}
+
+#mps5 {
+  background: url("../img/pripyat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 207px;
+  height: 136px;
+  margin-right: 15px;
 }
 
 #modal-shedule,
