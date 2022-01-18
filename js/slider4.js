@@ -1,13 +1,13 @@
 $('#slider4').on('init reInit',function(event,slick){
     var amount = slick.slideCount;
-    $('#range').attr('max',amount);
+    $('#range2').attr('max',amount);
   });
   
   $('#slider4').on('afterChange',function(e,slick,currentSlide){
-    $('#range').val(currentSlide+1);
+    $('#range2').val(currentSlide+1);
   });
   
-  $('#range').on('input change',function(){
+  $('#range2').on('input change',function(){
     $('#slider4').slick('slickGoTo',this.value-1);
   });
   

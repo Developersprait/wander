@@ -1,5 +1,5 @@
 @import '../vars/_mixins'
-.slide
+.slide2
     line-height: 136px
     text-align: center
     font-size: 60px
@@ -8,19 +8,87 @@
     width: 631px
 .slick-list
     margin: 0 -5px
+#sb1
+    @include slider4('../img/s4/1.png')
+#sb2
+    @include slider4('../img/d1.jpg')
+#sb3
+    @include slider4('../img/s4/3.png')
+#sb4
+    @include slider4('../img/s4/4.png')
+#sb5
+    @include slider4('../img/s4/5.png')
+#sb6
+    @include slider4('../img/s4/6.png')
+#sb7
+    @include slider4('../img/s4/7.png')
+#sb8
+    @include slider4('../img/s4/8.png')
+#sb9
+    @include slider4('../img/s4/9.png')
+#sb10
+    @include slider4('../img/s4/10.png')
+#sb11
+    @include slider4('../img/s4/11.png')
+#sb12
+    @include slider4('../img/s4/12.png')
+#sb13
+    @include slider4('../img/s4/13.png')
+#sb14
+    @include slider4('../img/s4/14.png')
+#sb15
+    @include slider4('../img/s4/15.png')
+#sb16
+    @include slider4('../img/s4/16.png')
+#sb17
+    @include slider4('../img/s4/17.png')
+#sb18
+    @include slider4('../img/s4/18.png')
+#sb19
+    @include slider4('../img/pripyat.jpg')
+#sb21
+    @include slider4('../img/sarco.jpg')
+#sb22
+    @include slider4('../img/stalk.jpg')    
+.slider__range
+    margin-top: 85px
+    width: 490px
+    margin-bottom: 100px
+    input[type=range]
+        width: 488px
+        height: 15px
+        overflow: hidden
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        border: solid 2px #000
+        border-radius: 10px
+    input[type=range]::-webkit-slider-runnable-track
+        border-radius: 10px/100%
+        height: 15px
+        border: none
+        background-color: transparent
 
-#mps1
-    @include img('../img/wheel.jpg', 207px, 136px, cover)
-    margin-right: 15px
-#mps2
-    @include img('../img/sea.jpg', 207px, 136px, cover)
-    margin-right: 15px
-#mps3
-    @include img('../img/sarco.jpg', 207px, 136px, cover)
-    margin-right: 15px
-#mps4
-    @include img('../img/sea2.jpg', 207px, 136px, cover)
-    margin-right: 15px
-#mps5
-    @include img('../img/pripyat.jpg', 207px, 136px, cover)   
-    margin-right: 15px             
+    input[type=range]::-webkit-slider-thumb
+        background: #000
+        border: none
+        border-radius: 10px/100%
+        cursor: pointer
+        width: 57px
+        height: 15px
+        -webkit-appearance: none
+
+    input[type=range]::-moz-range-track
+        border-radius: 10px/100%
+        height: 15px
+        border: none
+        background-color: transparent
+
+    input[type=range]::-moz-range-thumb
+        background: #000
+        border: none
+        border-radius: 10px/100%
+        cursor: pointer
+        width: 57px
+        height: 15px
+        -webkit-appearance: none

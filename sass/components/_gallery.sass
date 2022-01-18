@@ -1,5 +1,13 @@
 @import '../vars/_fonts'
 @import '../vars/_mixins'
 .gallery
-    height: 900px
-    @include img('../img/smoke.png', 100%, 900px, cover)
+    height: 765px
+    @include img('../img/smoke.png', 100%, 766px, cover)
+    &__container
+        width: 1235px
+        margin: 0 auto
+    &__title
+        @include font($montserrat, 900, 36px, 44px, normal) 
+        text-align: center  
+        margin-top: 100px
+        margin-bottom: 45px

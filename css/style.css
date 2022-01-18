@@ -936,13 +936,27 @@ input[type=range]::-moz-range-thumb {
 }
 
 .gallery {
-  height: 900px;
+  height: 765px;
   background: url("../img/smoke.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   width: 100%;
-  height: 900px;
+  height: 766px;
+}
+.gallery__container {
+  width: 1235px;
+  margin: 0 auto;
+}
+.gallery__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: normal;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 45px;
 }
 
 .footer {
@@ -1258,7 +1272,7 @@ input[type=range]::-moz-range-thumb {
   margin: 0 auto;
 }
 
-.slide {
+.slide2 {
   line-height: 136px;
   text-align: center;
   font-size: 60px;
@@ -1273,54 +1287,281 @@ input[type=range]::-moz-range-thumb {
   margin: 0 -5px;
 }
 
-#mps1 {
-  background: url("../img/wheel.jpg");
+#sb1 {
+  background: url("../img/s4/1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  width: 207px;
-  height: 136px;
-  margin-right: 15px;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
 }
 
-#mps2 {
-  background: url("../img/sea.jpg");
+#sb2 {
+  background: url("../img/d1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  width: 207px;
-  height: 136px;
-  margin-right: 15px;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
 }
 
-#mps3 {
-  background: url("../img/sarco.jpg");
+#sb3 {
+  background: url("../img/s4/3.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  width: 207px;
-  height: 136px;
-  margin-right: 15px;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
 }
 
-#mps4 {
-  background: url("../img/sea2.jpg");
+#sb4 {
+  background: url("../img/s4/4.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  width: 207px;
-  height: 136px;
-  margin-right: 15px;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
 }
 
-#mps5 {
+#sb5 {
+  background: url("../img/s4/5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+#sb6 {
+  background: url("../img/s4/6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+#sb7 {
+  background: url("../img/s4/7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+#sb8 {
+  background: url("../img/s4/8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+#sb9 {
+  background: url("../img/s4/9.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+#sb10 {
+  background: url("../img/s4/10.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+#sb11 {
+  background: url("../img/s4/11.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+#sb12 {
+  background: url("../img/s4/12.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+#sb13 {
+  background: url("../img/s4/13.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+#sb14 {
+  background: url("../img/s4/14.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+#sb15 {
+  background: url("../img/s4/15.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+#sb16 {
+  background: url("../img/s4/16.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+#sb17 {
+  background: url("../img/s4/17.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+#sb18 {
+  background: url("../img/s4/18.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+#sb19 {
   background: url("../img/pripyat.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  width: 207px;
-  height: 136px;
-  margin-right: 15px;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+#sb21 {
+  background: url("../img/stalk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+#sb22 {
+  background: url("../img/sarco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+.slider__range {
+  margin-top: 85px;
+  width: 490px;
+  margin-bottom: 100px;
+}
+.slider__range input[type=range] {
+  width: 488px;
+  height: 15px;
+  overflow: hidden;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: solid 2px #000;
+  border-radius: 10px;
+}
+.slider__range input[type=range]::-webkit-slider-runnable-track {
+  border-radius: 10px/100%;
+  height: 15px;
+  border: none;
+  background-color: transparent;
+}
+.slider__range input[type=range]::-webkit-slider-thumb {
+  background: #000;
+  border: none;
+  border-radius: 10px/100%;
+  cursor: pointer;
+  width: 57px;
+  height: 15px;
+  -webkit-appearance: none;
+}
+.slider__range input[type=range]::-moz-range-track {
+  border-radius: 10px/100%;
+  height: 15px;
+  border: none;
+  background-color: transparent;
+}
+.slider__range input[type=range]::-moz-range-thumb {
+  background: #000;
+  border: none;
+  border-radius: 10px/100%;
+  cursor: pointer;
+  width: 57px;
+  height: 15px;
+  -webkit-appearance: none;
 }
 
 #modal-shedule,
