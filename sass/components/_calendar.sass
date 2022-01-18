@@ -1,0 +1,46 @@
+@import '../vars/_mixins'
+@import '../vars/_fonts'
+#calendar2
+    width: 80%
+    height: 300px
+    margin: 0 auto
+    font-family: "Montserrat", sans-serif
+    line-height: 1.2em
+    font-size: 15px
+    text-align: center
+    margin-top: 45px
+
+    & thead tr:last-child
+        font-size: small
+        color: #fff
+
+    & thead tr:nth-child(1) td:nth-child(2)
+        height: 40px
+        color: #fff
+        text-transform: uppercase
+        font-family: $montserrat
+        font-size: 25px
+        margin-bottom: 19px
+
+    // & thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover
+    //     cursor: pointer
+
+    & tbody td
+        color: #fff
+
+    & tbody td:nth-child(n+5), #calendar2 .holiday
+        color: $yellow
+        cursor: pointer
+    & tbody td:nth-child(n+5):hover, #calendar2 .holiday:hover
+        color: #fff   
+        background-color: rgba(222, 213, 0,0.5) 
+
+    & tbody td.today
+        background: rgba(222, 213, 0, 0.38)
+        color: #fff
+        
+#lar,
+#rar
+    color: #fff
+    font-size: 20px
+    cursor: pointer
