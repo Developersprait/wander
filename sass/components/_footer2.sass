@@ -1,0 +1,22 @@
+@import '../vars/_fonts'
+@import '../vars/_mixins'
+.footer2
+    background-color: #000
+    height: 250px
+    width: 100%
+    &__items
+        margin-top: 50px
+    &__item
+        display: flex
+        margin-top: 27px
+    &__logo1
+        @include img('../img/labels/yellow/phone.png',24px, 24px, cover)
+        margin-right: 30px
+        margin-top: 5px
+    &__logo2
+        @include img('../img/labels/yellow/mail.png',24px, 24px, cover)
+        margin-right: 30px
+        margin-top: 5px
+    &__text
+        @include font($montserrat,700,16px,35px,1.6px)
+        color: $yellow

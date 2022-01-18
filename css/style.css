@@ -1017,6 +1017,47 @@ input[type=range]::-moz-range-thumb {
   margin-right: 13px;
 }
 
+.footer2 {
+  background-color: #000;
+  height: 250px;
+  width: 100%;
+}
+.footer2__items {
+  margin-top: 50px;
+}
+.footer2__item {
+  display: flex;
+  margin-top: 27px;
+}
+.footer2__logo1 {
+  background: url("../img/labels/yellow/phone.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 24px;
+  height: 24px;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+.footer2__logo2 {
+  background: url("../img/labels/yellow/mail.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 24px;
+  height: 24px;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+.footer2__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 35px;
+  letter-spacing: 1.6px;
+  color: #DED500;
+}
+
 #slide1 {
   width: 1435px;
   height: 721px;
@@ -1497,7 +1538,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 #sb21 {
-  background: url("../img/stalk.jpg");
+  background: url("../img/sarco.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1508,7 +1549,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 #sb22 {
-  background: url("../img/sarco.jpg");
+  background: url("../img/stalk.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
