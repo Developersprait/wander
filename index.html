@@ -44,7 +44,8 @@
                             <ul class="menu-box">
                                 <li><a href="#about">O NAS</a></li>
                                 <li><a href="charnobyl.html">CZARNOBYL</a></li>
-                                <li><a href="#contacts">KALENDARZ</a></li>
+                                <li><a data-fancybox data-src="#modal-shedule" href="javascript:;" href="#">
+                                KALENDARZ</a></li>
                             </ul>
                         </div>
                         <div class="socials">
@@ -70,7 +71,7 @@
             </div>
         </div>
     </header>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__text">
@@ -121,13 +122,32 @@
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
+    <div id="modal-shedule">
+        <table id="calendar2">
+            <thead>
+                <tr>
+                    <td id="lar">&larr;
+                    <td colspan="5">
+                    <td id="rar">&rarr;
+                <tr class="dates">
+                    <td>pn
+                    <td>wt
+                    <td>śr
+                    <td>cz
+                    <td>pi
+                    <td>so
+                    <td>nd
+            <tbody>
+        </table>
+    </div>
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/slider1.js"></script>
     <script src="js/slider2.js"></script>
+    <script src="js/calendar.js"></script>
 </body>
 
 </html>
