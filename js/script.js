@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sheduleButton = document.querySelector('.shedule__btn'),
-        cross = document.querySelector('.fancybox-button');
+        cross = document.querySelector('.fancybox-button'),
+        planItem = document.querySelectorAll('.plan__item'),
+        planImg = document.querySelectorAll('img'),
+        planLink = document.querySelector('.plan__link');
 
     function fix() {
         document.addEventListener('scroll', () => {
@@ -11,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     }
+
     function shedule(shedule, cross) {
         shedule.addEventListener('click', () => {
             shedule.style.display = 'none';

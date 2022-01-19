@@ -82,10 +82,17 @@ body {
   filter: drop-shadow(4px 10px 6px black);
 }
 
+.nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .hero {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 34%;
   z-index: 0;
-  height: 721px;
 }
 .hero__title {
   font-family: "Josefin Sans", sans-serif;
@@ -617,8 +624,9 @@ input[type=range]::-moz-range-thumb {
 .plan__items {
   display: flex;
   justify-content: space-between;
-  width: 950px;
+  width: 1000px;
   margin: 0 auto;
+  padding: 25px;
 }
 .plan__item {
   width: 254px;
@@ -626,7 +634,6 @@ input[type=range]::-moz-range-thumb {
   background-color: #c4c4c4;
   border-radius: 10px;
   text-align: center;
-  transition: 0.3s all;
 }
 .plan__item-text {
   margin-top: 24px;
@@ -711,8 +718,9 @@ input[type=range]::-moz-range-thumb {
   color: #fff;
 }
 .plan__item:hover {
-  box-shadow: 20px 20px 38px -7px rgba(196, 196, 196, 0.5);
-  box-shadow: -21px -20px 38px -7px rgba(196, 196, 196, 0.5);
+  width: 271px;
+  height: 429px;
+  box-shadow: 0px 0px 25px 19px rgba(196, 196, 196, 0.53);
 }
 
 .rules {
@@ -1071,6 +1079,7 @@ input[type=range]::-moz-range-thumb {
 #calendar2 thead tr:last-child {
   font-size: small;
   color: #fff;
+  line-height: 40px;
 }
 #calendar2 thead tr:nth-child(1) td:nth-child(2) {
   height: 40px;
@@ -1103,44 +1112,79 @@ input[type=range]::-moz-range-thumb {
   cursor: pointer;
 }
 
-#slide1 {
-  width: 1435px;
+.slider1 {
+  width: 100%;
   height: 721px;
-  background: url(../img/mount.jpg);
+  position: relative;
+  margin: 0 auto;
+}
+
+#slide1 {
+  background: url("../img/mount.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
-  margin: 0 auto;
+  background-position: top;
+  width: 100%;
+  height: 721px;
+  background-position: center;
 }
 
 #slide2 {
-  width: 1435px;
-  height: 721px;
-  background: url(../img/cher.jpg);
+  background: url("../img/cher.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
-  margin: 0 auto;
+  background-position: top;
+  width: 100%;
+  height: 721px;
 }
 
 #slide3 {
-  width: 1435px;
-  height: 721px;
-  background: url(../img/night.jpg);
+  background: url("../img/night.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
-  margin: 0 auto;
+  background-position: top;
+  width: 100%;
+  height: 721px;
+  background-position: center;
 }
 
 #slide4 {
-  width: 1435px;
-  height: 721px;
-  background: url(../img/stalk.jpg);
+  background: url("../img/stalk.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
-  margin: 0 auto;
+  background-position: top;
+  width: 100%;
+  height: 721px;
+}
+
+.slider1 .slick-dots {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  position: absolute;
+  right: 41.5%;
+  top: 89%;
+}
+
+.slick-dots button {
+  background: transparent;
+  border: solid 2px #fff;
+  border-radius: 50%;
+  height: 17px;
+  width: 17px;
+  margin: 15px;
+  outline: none;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.slick-dots button:hover {
+  cursor: pointer;
+}
+
+.slick-dots li[class=slick-active] button {
+  background: #fff;
 }
 
 .slide {

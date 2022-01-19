@@ -1,25 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
-    //slider
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        const slides = document.getElementsByClassName("mySlides");
-
-        if (!slides.length) {
-            return;
-        }
-
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-
-        slideIndex += 1;
-
-        if (slideIndex > slides.length) {
-            slideIndex = 1;
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 4000);
-    }
+$(document).ready(function () {
+    $('.slider1').slick({
+        arrows: false, // показать стрелки
+        dots: true, // не показывать точки
+        slidesToShow: 1, // показывать по 3 слайда
+        autoplay: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear' // автоматическое проигрывание слайдов
+    });
 });

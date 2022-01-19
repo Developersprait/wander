@@ -15,5 +15,6 @@ $('#slider4').on('init reInit',function(event,slick){
     variableWidth: true,
     slidesToShow:2,
     arrows:false,
-    dots:false
+    dots:false,
+    infinite:true
   });

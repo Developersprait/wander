@@ -1,32 +1,42 @@
+@import '../vars/_fonts'
+@import '../vars/_mixins'
+.slider1
+    width: 100%
+    height: 721px
+    position: relative
+    margin: 0 auto
+
 #slide1
-    width: 1435px
-    height: 721px
-    background: url(../img/mount.jpg)
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: bottom
-    margin: 0 auto
+    @include img('../img/mount.jpg', 100%, 721px, cover)
+    background-position: center
 #slide2
-    width: 1435px
-    height: 721px
-    background: url(../img/cher.jpg)
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: bottom
-    margin: 0 auto
+    @include img('../img/cher.jpg', 100%, 721px, cover)
 #slide3
-    width: 1435px
-    height: 721px
-    background: url(../img/night.jpg)
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: bottom
-    margin: 0 auto
+    @include img('../img/night.jpg', 100%, 721px, cover)
+    background-position: center
 #slide4
-    width: 1435px
-    height: 721px
-    background: url(../img/stalk.jpg)
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: bottom
-    margin: 0 auto            
+    @include img('../img/stalk.jpg', 100%, 721px, cover)
+
+.slider1 .slick-dots
+    text-align: center
+    display: flex // поставить кнопки в ряд
+    justify-content: center // выровнять по центру
+    list-style: none // убираем черные маркеры
+    position: absolute
+    right: 41.5%
+    top: 89%
+.slick-dots button
+    background: transparent// цвет фона
+    border: solid 2px #fff // без рамки
+    border-radius: 50% // радиус закругления
+    height: 17px // высота точки
+    width: 17px // ширина точки
+    margin: 15px // отступы между точками
+    outline: none // убираем обводку
+    overflow: hidden
+    font-size: 0
+.slick-dots button:hover
+    cursor: pointer
+.slick-dots li[class="slick-active"] button
+    background: #fff
+
