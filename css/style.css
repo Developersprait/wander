@@ -1223,6 +1223,65 @@ input[type=range]::-moz-range-thumb {
   margin-right: 13px;
 }
 
+@media screen and (max-width: 992px) {
+  .footer {
+    height: 150px;
+  }
+  .footer__back {
+    background: url("../img/mount.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 150px;
+    background-position: bottom;
+  }
+  .footer__wrapper {
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+  .footer__left {
+    width: 244px;
+  }
+  .footer__left img {
+    width: 37px;
+    height: 25px;
+    margin-right: 14px;
+  }
+  .footer__text {
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 1px;
+  }
+  .footer__right {
+    overflow: hidden;
+  }
+  .footer__pay {
+    width: 60px;
+    margin-bottom: -17px;
+    position: relative;
+    top: 50%;
+  }
+  .footer__pay-visa {
+    width: 24px;
+    height: 15px;
+    margin-top: 3px;
+  }
+  .footer__pay-master {
+    width: 24px;
+    height: 15px;
+  }
+  .footer__socials {
+    position: relative;
+    top: 75%;
+  }
+  .footer__socials img {
+    width: 19px;
+    height: 19px;
+    margin-right: 7px;
+  }
+}
 .footer2 {
   background-color: #000;
   height: 250px;

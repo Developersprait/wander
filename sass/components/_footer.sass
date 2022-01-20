@@ -37,3 +37,44 @@
         width: 38px
         height: 38px
         margin-right: 13px
+@media screen and ( max-width:992px  )
+    .footer
+        height: 150px
+        &__back
+            @include img('../img/mount.jpg', 100%, 150px, cover)
+            background-position: bottom
+        &__wrapper
+            width: 360px
+            margin: 0 auto
+            margin-top: 32px
+        &__left
+            width: 244px
+            img
+                width: 37px
+                height: 25px
+                margin-right: 14px
+        &__text
+            font-size: 10px
+            line-height: 15px
+            letter-spacing: 1px
+        &__right
+            overflow: hidden    
+        &__pay
+            width: 60px
+            margin-bottom: -17px
+            position: relative
+            top: 50%
+            &-visa
+                width: 24px
+                height: 15px
+                margin-top: 3px
+            &-master
+                width: 24px
+                height: 15px
+        &__socials
+            position: relative
+            top: 75%
+            img
+                width: 19px
+                height: 19px
+                margin-right: 7px
