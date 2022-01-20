@@ -210,7 +210,6 @@ body {
 
   .header__btn-menu {
     display: block;
-    width: 22px;
     height: 22px;
     color: #fff;
     margin: 27px 0 0 34px;
@@ -234,7 +233,7 @@ body {
     display: none;
     left: 0;
     z-index: 50;
-    margin-left: 35px;
+    margin-left: 34px;
   }
   .menu li {
     display: block;
@@ -296,6 +295,12 @@ body {
 
   .long-arr {
     display: block;
+  }
+
+  .dark {
+    background-color: rgba(0, 0, 0, 0.59);
+    width: 157px;
+    padding-left: 5px;
   }
 }
 .header2__hero {
@@ -2012,4 +2017,13 @@ input[type=range]::-moz-range-thumb {
   letter-spacing: 1.6px;
   line-height: 30px;
   margin: 20px 0;
+}
+
+@media screen and (max-width: 992px) {
+  #modal-shedule {
+    margin: 0 auto;
+    margin-top: 100px;
+    right: 0;
+    left: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

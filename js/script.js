@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     }
-
     function shedule(shedule, cross) {
         shedule.addEventListener('click', () => {
             shedule.style.display = 'none';
