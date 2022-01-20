@@ -1,11 +1,7 @@
 @import '../vars/_fonts'
+@import '../vars/_mixins'
 .header
     width: 100%
-    &__slider
-        position: absolute
-        width: 1435px
-        height: 721px
-        margin: 0 auto
     &__btn-menu
         display: none
         background: url(..img/burger.png)
@@ -93,6 +89,8 @@
         transition: .3s
     a:hover
         color: #000
+.contact a
+    display: none
 .socials a img
     width: 24px
     height: 24px
@@ -100,3 +98,88 @@
     margin-right: -14px
 .socials a img:hover
     opacity: 0.5
+.analog
+    @include img('../img/mount.jpg', 100%, 798px, cover)
+    display: none
+    background-attachment: fixed
+    background-blend-mode: overlay
+.long-arr
+    @include img('../img/lar.png', 10px, 260px, cover)
+    display: none
+    margin: 0 auto
+//media
+@media screen and ( max-width:992px  )
+    .slick-slider
+        display: none
+    .slider1
+        display: none !important
+    .analog
+        display: block
+    .header__btn-menu
+        display: block
+        width: 22px
+        height: 22px
+        color: #fff
+        margin: 43px 0 0 34px
+        z-index: 100
+    .nav
+        position: fixed
+        top: 0
+        width: 100%
+        z-index: 100
+    .menu
+        &-box
+            width: 177px
+            height: 239px
+            justify-content: space-between
+        ul
+            margin: 0 auto
+            display: none
+            left: 0
+            z-index: 50
+            margin-left: 35px
+        li
+            display: block
+            text-align: center
+            padding-top: 0
+        a
+            display: block
+            background-color: rgba(0, 0, 0, 0.59)
+            color: #fff
+            padding: 15px 0
+            text-align: center
+    .contact
+        display: block
+    .socials a
+        display: inline-block
+        background-color: transparent
+        img
+            margin-right: 0
+            margin-top: 32px
+            width: 15px
+            height: 15px
+    .hero
+        right: 0
+        left: 0
+        &__title
+            text-align: center
+            font-weight: 400
+            font-size: 35px
+            letter-spacing: 3.5px
+        &__btn
+            margin-bottom: 23px
+            box-shadow: 0px 4px 18px 0px #FFFFFF
+    .header
+        &__box
+            width: 267px
+        &__logo
+            height: 124px
+            margin-top: 129px
+            margin-bottom: 34px
+            text-align: center
+            img
+                width: 245px
+                height: 105px
+                padding-right: 0
+    .long-arr
+        display: block

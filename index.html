@@ -19,17 +19,18 @@
 
 <body>
     <header class="header">
+        <div class="analog"></div>
         <div class="slider1">
-            <div class="slider__item" >
+            <div class="slider__item">
                 <div id="slide1"></div>
             </div>
-            <div class="slider__item" >
+            <div class="slider__item">
                 <div id="slide2"></div>
             </div>
-            <div class="slider__item" >
+            <div class="slider__item">
                 <div id="slide3"></div>
             </div>
-            <div class="slider__item" >
+            <div class="slider__item">
                 <div id="slide4"></div>
             </div>
         </div>
@@ -45,7 +46,8 @@
                                 <li><a href="#about">O NAS</a></li>
                                 <li><a href="charnobyl.html">CZARNOBYL</a></li>
                                 <li><a data-fancybox data-src="#modal-shedule" href="javascript:;" href="#">
-                                KALENDARZ</a></li>
+                                        KALENDARZ</a></li>
+                                <li class="contact"><a href=".footer"> KONTAKT</a></li>        
                             </ul>
                         </div>
                         <div class="socials">
@@ -58,20 +60,23 @@
             </section>
         </nav>
         <div class="hero">
-            <div class="header__box">
-                <div class="header__logo">
-                    <img src="img/logo.png" alt="logotype">
-                </div>
-                <p class="hero__title">WĘDROWCY</p>
-                <div class="hero__btn">
-                    <span class="hero__wrapper">
-                        <a href="charnobyl.html" class="hero__link">CZARNOBYL</a>
-                    </span>
+            <div class="container">
+                <div class="header__box">
+                    <div class="header__logo">
+                        <img src="img/logo.png" alt="logotype">
+                    </div>
+                    <p class="hero__title">WĘDROWCY</p>
+                    <div class="hero__btn">
+                        <span class="hero__wrapper">
+                            <a href="charnobyl.html" class="hero__link">CZARNOBYL</a>
+                        </span>
+                    </div>
+                    <div class="long-arr"></div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="about" id="about">
+    <!-- <section class="about" id="about">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__text">
@@ -122,7 +127,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <div id="modal-shedule">
         <table id="calendar2">
             <thead>
@@ -148,6 +153,8 @@
     <script src="js/slider1.js"></script>
     <script src="js/slider2.js"></script>
     <script src="js/calendar.js"></script>
+    <script src="js/toggle1.js"></script>
+    <script src="menu.js"></script>
 </body>
 
 </html>

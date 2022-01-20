@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sheduleButton = document.querySelector('.shedule__btn'),
-        cross = document.querySelector('.fancybox-button'),
-        planItem = document.querySelectorAll('.plan__item'),
-        planImg = document.querySelectorAll('img'),
-        planLink = document.querySelector('.plan__link');
+        cross = document.querySelector('.fancybox-button');
 
     function fix() {
         document.addEventListener('scroll', () => {
