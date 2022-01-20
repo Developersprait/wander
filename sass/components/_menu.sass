@@ -9,6 +9,8 @@
     margin-top: 96px
     width: 100%
     z-index: 100
+    &__wrp
+        padding-left: 125px
 
 .menu2 ul
     text-align: justify
@@ -29,6 +31,9 @@
         overflow: hidden
         display: inline-block
 
+.cross
+    display: none        
+
 .menu2 li
     display: inline-block
     margin: 0
@@ -42,10 +47,50 @@
     font-size: 18px
     line-height: 22px
     color: #000
+    
 .menu2 a:hover
     opacity: 0.5
 .wrp
     width: 1170px
     margin: 0 auto
-.burger
+.hidden
     display: none
+@media screen and ( max-width:992px  )
+    .menu2
+        height: 555px
+        padding: 0
+        &__wrp
+            width: 177px
+            position: absolute
+            right: 0
+            padding-left: 0
+        ul
+            display: none
+            z-index: 50
+            width: 177px
+            height: 555px
+            justify-content: space-between
+
+        li
+            display: block
+            text-align: center
+            padding-top: 0
+        a
+            display: block
+            background-color: rgba(0, 0, 0)
+            color: $yellow
+            padding: 21px 0
+            text-align: center
+            span
+                display: block
+                color: $yellow
+    .cross
+            display: block
+            background-color: rgba(0, 0, 0)
+            color: $yellow  
+            text-align: right          
+            width: 177px
+            height: 14px
+            padding-right: 11px
+            overflow: hidden
+            font-size: 19px

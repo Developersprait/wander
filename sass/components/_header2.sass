@@ -1,7 +1,11 @@
 @import '../vars/_fonts'
+@import '../vars/_mixins'
 .header2
     &__hero
         margin-top: 140px
+        &-desc
+            @include img('../img/ch5.jpg', 100%, 555px, cover)
+            display: none
     &__phone
         display: flex
         a
@@ -59,3 +63,40 @@
         margin-left: 31px
     &__btn a:hover
         opacity: 0.5
+.burger
+    display: none
+@media screen and ( max-width:992px  )
+    .header2
+        height: 77px
+        position: relative
+        margin-top: 0
+        &__btn
+            display: none
+        &__top
+            &__left
+                img
+                    width: 14px
+                    height: 14px
+                    margin-left: 28px
+            &__mid
+                margin-left: 0
+                img
+                    width: 48px
+                    height: 48px
+            &__right
+                width: 128px
+                right: auto
+                a
+                    display: none
+        &__phone-number
+            margin-top: 3px
+        &__hero
+            margin-top: 0
+            &-desc
+                display: block    
+    .burger
+        display: block
+        width: 22px
+        height: 22px
+        color: $yellow
+        margin: 0 auto
