@@ -44,6 +44,19 @@ body {
   padding-top: 23px;
 }
 
+.shedule__btn-inner {
+  background-color: #000;
+  width: 272px;
+  height: 73px;
+  text-align: center;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 4.8px;
+  padding-top: 23px;
+}
+
 .fixed {
   position: fixed;
   right: 0;
@@ -1004,6 +1017,55 @@ input[type=range]::-moz-range-thumb {
 @media screen and (max-width: 992px) {
   .tour {
     margin-top: 0;
+  }
+  .tour__items {
+    display: block;
+    margin-bottom: 50px;
+  }
+  .tour__item {
+    margin-bottom: 20px;
+  }
+  .tour__item-left ul {
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2.2px;
+  }
+  .tour__item-left li {
+    text-align: left;
+    padding-left: 0;
+    font-size: 12px;
+  }
+  .tour__item-right {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 50px;
+    direction: rtl;
+  }
+  .tour__bottom-items {
+    width: 360px;
+    margin-bottom: 35px;
+  }
+  .tour__logo img {
+    width: 30px;
+    height: 30px;
+  }
+  .tour__title {
+    font-size: 19px;
+    letter-spacing: 1px;
+  }
+  .tour__descr {
+    width: 100px;
+    margin: 0 auto;
+    font-size: 9px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+
+  #a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10, #a11, #a12 {
+    margin-right: 35px;
   }
 }
 .plan {

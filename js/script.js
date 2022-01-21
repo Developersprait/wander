@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function fix() {
         document.addEventListener('scroll', () => {
             if (window.scrollY > 100 && window.screen.width >=992) {
-                document.querySelector('.shedule__btn').classList.toggle('fixed');
+                document.querySelector('.shedule__btn').classList.add('fixed');
                 console.log('done');
             }
         });
@@ -22,6 +22,5 @@ document.addEventListener('DOMContentLoaded', () => {
     
     fix();
     shedule(sheduleButton, cross);
-    menu2();
 
 });

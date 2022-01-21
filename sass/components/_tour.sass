@@ -97,4 +97,47 @@
     @include a('../img/s4/6.png')
 @media screen and ( max-width:992px  )
     .tour
-        margin-top: 0    
+        margin-top: 0
+        &__items
+            display: block
+            margin-bottom: 50px
+        &__item
+            margin-bottom: 20px
+            &-left
+                ul
+                    width: 360px
+                    margin: 0 auto
+                    margin-top: 100px
+                    text-align: center
+                    font-size: 22px
+                    letter-spacing: 2.2px
+                li
+                    text-align: left
+                    padding-left: 0
+                    font-size: 12px
+            &-right
+                width: 320px
+                margin: 0 auto
+                margin-top: 50px
+                direction: rtl
+        &__bottom
+            &-items
+                width: 360px 
+                margin-bottom: 35px
+
+        &__logo
+            img
+               width: 30px
+               height: 30px     
+        &__title
+            font-size: 19px
+            letter-spacing: 1px
+        &__descr
+            width: 100px
+            margin: 0 auto
+            font-size: 9px
+            letter-spacing: 1px
+            line-height: 30px    
+
+    #a1,#a2,#a3,#a4,#a5,#a6,#a7,#a8,#a9,#a10,#a11,#a12
+        margin-right: 35px
