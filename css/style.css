@@ -16,7 +16,7 @@ body {
 .container {
   max-width: 1170px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
 .shedule__btn,
@@ -106,6 +106,7 @@ body {
 @media screen and (max-width: 767px) {
   .container {
     max-width: 737px;
+    padding: 0 20px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -360,7 +361,7 @@ body {
   }
 }
 .header2__hero {
-  margin-top: 140px;
+  margin-top: 120px;
 }
 .header2__phone {
   display: flex;
@@ -1325,6 +1326,53 @@ input[type=range]::-moz-range-thumb {
   margin-bottom: 45px;
 }
 
+@media screen and (max-width: 992px) {
+  .rules {
+    background: url("../img/resquer2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 1362px;
+    background-position-x: 80%;
+    width: 100%;
+    height: 2000px;
+    overflow: hidden;
+  }
+  .rules__radiation {
+    background: none;
+    width: 360px;
+    margin-bottom: 100px;
+  }
+  .rules__items {
+    width: 360px;
+    margin: 0 auto;
+    display: block;
+    padding: 0;
+    margin-bottom: 100px;
+  }
+  .rules__title {
+    font-size: 23px;
+    letter-spacing: 3px;
+  }
+  .rules__item {
+    width: 360px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    justify-content: space-between;
+  }
+  .rules__item-img1, .rules__item-img2, .rules__item-img3, .rules__item-img4, .rules__item-img5, .rules__item-img6, .rules__item-img7, .rules__item-img8 {
+    width: 31px;
+    height: 31px;
+    margin-right: 23px;
+  }
+  .rules__item-text {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 1.4px;
+    font-weight: 600;
+  }
+}
 .price {
   height: 900px;
 }

@@ -37,14 +37,55 @@
         &-img7
             @include rules('../img/labels/spek.png')
         &-img8
-            @include rules('../img/labels/man.png')  
+            @include rules('../img/labels/man.png')
         &-text
-            width: 310px        
+            width: 310px
             font-family: $montserrat
             font-weight: 500
             font-size: 14px
-            letter-spacing: 1.4px       
-            line-height: 30px   
+            letter-spacing: 1.4px
+            line-height: 30px
         &-l
-            margin-bottom: 45px               
-                            
+            margin-bottom: 45px
+                 
+@media screen and ( max-width:992px  )
+    .rules
+        @include img('../img/resquer2.jpg', 100%, 1362px, cover)
+        background-position-x: 80%
+        width: 100%
+        height: 2000px
+        overflow: hidden
+        &__radiation
+            background: none
+            width: 360px
+            margin-bottom: 100px
+        &__items
+            width: 360px
+            margin: 0 auto
+            display: block
+            padding: 0
+            margin-bottom: 100px
+        &__title
+            font-size: 23px
+            letter-spacing: 3px
+        &__item
+            width: 360px
+            margin: 0 auto
+            margin-bottom: 48px
+            justify-content: space-between
+            &-img1,
+            &-img2,
+            &-img3,
+            &-img4,
+            &-img5,
+            &-img6,
+            &-img7,
+            &-img8
+                width: 31px
+                height: 31px
+                margin-right: 23px
+            &-text
+                font-size: 14px
+                line-height: 30px
+                letter-spacing: 1.4px
+                font-weight: 600         
