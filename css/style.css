@@ -2348,4 +2348,25 @@ input[type=range]::-moz-range-thumb {
     right: 0;
     left: 0;
   }
+
+  #modal-plan1,
+#modal-plan2,
+#modal-plan3,
+#modal-link {
+    width: 360px;
+    margin-top: 10px;
+    padding: 30px;
+    background: url("../img/resquer.jpg");
+    background-size: 320%;
+    background-repeat: repeat-y;
+    background-position-x: -611px;
+  }
+  #modal-plan1 p,
+#modal-plan2 p,
+#modal-plan3 p,
+#modal-link p {
+    font-size: 13px;
+    letter-spacing: 1.1px;
+    font-weight: 500;
+  }
 }/*# sourceMappingURL=style.css.map */
