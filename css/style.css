@@ -19,16 +19,19 @@ body {
   padding: 0 5px;
 }
 
-.shedule__btn {
+.shedule__btn,
+.mob {
   position: absolute;
   right: 0;
   top: 84%;
   box-shadow: -14px -18px 19px 7px rgba(255, 255, 255, 0.43);
 }
-.shedule__btn a {
+.shedule__btn a,
+.mob a {
   text-decoration: none;
 }
-.shedule__btn-inner {
+.shedule__btn a-inner,
+.mob a-inner {
   background-color: #000;
   width: 272px;
   height: 73px;
@@ -41,6 +44,14 @@ body {
   padding-top: 23px;
 }
 
+.fixed {
+  position: fixed;
+  right: 0;
+  top: 84%;
+  box-shadow: -14px -18px 19px 7px rgba(255, 255, 255, 0.43);
+  z-index: 100;
+}
+
 @media screen and (max-width: 992px) {
   .container {
     max-width: 960px;
@@ -48,6 +59,35 @@ body {
 
   .container__s {
     max-width: 960px;
+  }
+
+  .shedule__btn {
+    display: none;
+  }
+
+  .mob {
+    position: relative;
+    width: 188px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 20px 7px rgba(255, 255, 255, 0.33);
+  }
+  .mob a {
+    text-align: center;
+  }
+
+  .mob-inner {
+    margin: 0 auto;
+    background-color: #000;
+    width: 188px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 3.4px;
+    padding-top: 17px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -309,15 +349,6 @@ body {
 .header2__hero {
   margin-top: 140px;
 }
-.header2__hero-desc {
-  background: url("../img/ch5.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  width: 100%;
-  height: 555px;
-  display: none;
-}
 .header2__phone {
   display: flex;
 }
@@ -349,14 +380,14 @@ body {
 .header2__top__left {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 31px;
 }
 .header2__top__left img {
   width: 24px;
   height: 24px;
 }
 .header2__top__mid {
-  margin-top: 21px;
+  margin-top: 12px;
   margin-left: -110px;
 }
 .header2__top__mid img {
@@ -365,7 +396,7 @@ body {
 }
 .header2__top__right {
   display: flex;
-  margin-top: 40px;
+  margin-top: 28px;
   position: relative;
   right: -9px;
 }
@@ -393,6 +424,16 @@ body {
   display: none;
 }
 
+.background2 {
+  background: url("../img/ch5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 555px;
+  display: none;
+}
+
 @media screen and (max-width: 992px) {
   .header2 {
     height: 77px;
@@ -401,6 +442,9 @@ body {
   }
   .header2__btn {
     display: none;
+  }
+  .header2__top {
+    height: 77px;
   }
   .header2__top__left img {
     width: 14px;
@@ -437,6 +481,40 @@ body {
     height: 22px;
     color: #DED500;
     margin: 0 auto;
+  }
+
+  .background2 {
+    display: block;
+    background-position: right;
+    text-align: center;
+  }
+  .background2 .title {
+    font-size: 31px;
+    line-height: 38px;
+    letter-spacing: 3px;
+    margin-top: 35px;
+    margin-bottom: 278px;
+  }
+  .background2__text {
+    margin: 0 auto;
+    width: 360px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1.8px;
+  }
+  .background2 .slider__btn {
+    position: absolute;
+    top: 605px;
+    right: 0;
+    left: 0;
+  }
+}
+@media screen and (max-width: 479px) {
+  .background2 {
+    background-position-x: -450px;
   }
 }
 .menu2 {
@@ -511,6 +589,8 @@ body {
   .menu2 {
     height: 555px;
     padding: 0;
+    background-color: transparent;
+    margin-top: 68px;
   }
   .menu2__wrp {
     width: 177px;
@@ -921,6 +1001,11 @@ input[type=range]::-moz-range-thumb {
   margin-right: 28px;
 }
 
+@media screen and (max-width: 992px) {
+  .tour {
+    margin-top: 0;
+  }
+}
 .plan {
   height: 720px;
   background: url("../img/ch4.jpg");
@@ -1574,10 +1659,6 @@ input[type=range]::-moz-range-thumb {
   .slider1 {
     display: none !important;
   }
-
-  .slider3 {
-    display: none;
-  }
 }
 .slide {
   line-height: 136px;
@@ -1795,6 +1876,15 @@ input[type=range]::-moz-range-thumb {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 992px) {
+  .slider3 {
+    display: none;
+  }
+
+  .slick-slider {
+    display: none;
+  }
+}
 .slide2 {
   line-height: 136px;
   text-align: center;
