@@ -1734,7 +1734,44 @@ input[type=range]::-moz-range-thumb {
   letter-spacing: 1.6px;
   color: #DED500;
 }
+.footer2__soc {
+  display: none;
+}
 
+@media screen and (max-width: 992px) {
+  .footer2 {
+    height: 265px;
+  }
+  .footer2__items {
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+  .footer2__logo1, .footer2__logo2 {
+    margin-right: 11px;
+  }
+  .footer2__soc {
+    display: block;
+    display: flex;
+  }
+  .footer2__soc img {
+    width: 24px;
+    height: 24px;
+    margin-right: 11px;
+  }
+  .footer2__text {
+    font-size: 10px;
+    width: 240px;
+    line-height: 19px;
+  }
+  .footer2__item2 {
+    display: flex;
+  }
+
+  .el1 {
+    display: flex;
+  }
+}
 #calendar2 {
   width: 80%;
   height: 300px;

@@ -20,3 +20,35 @@
     &__text
         @include font($montserrat,700,16px,35px,1.6px)
         color: $yellow
+    &__soc
+        display: none    
+@media screen and ( max-width:992px  )        
+    .footer2
+        height: 265px
+        &__items
+            width: 360px
+            margin: 0 auto
+            margin-top: 45px
+        &__logo1,
+        &__logo2
+            margin-right: 11px
+           
+        &__soc
+            display: block
+            display: flex
+            img
+                width: 24px
+                height: 24px  
+                margin-right: 11px  
+        &__text
+            font-size: 10px     
+            width: 240px   
+            line-height: 19px
+        &__item2
+            display: flex      
+    .el1
+        display: flex      
+    // .footer2__logo2
+    //         width: 36px         
+
+
