@@ -1472,6 +1472,52 @@ input[type=range]::-moz-range-thumb {
   padding-bottom: 30px;
 }
 
+@media screen and (max-width: 992px) {
+  .price {
+    height: 800px;
+  }
+  .price__bg {
+    display: none;
+  }
+  .price__wrapper {
+    width: 360px;
+    margin: 0 auto;
+    padding-left: 0;
+    margin-top: 40px;
+  }
+  .price__value {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  .price__inner {
+    margin-top: 50px;
+  }
+  .price__box {
+    display: flex;
+  }
+  .price__box-right {
+    background: url("../img/rw.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 151px;
+    height: 151px;
+    margin-left: 32px;
+    margin-top: 10px;
+  }
+  .price__logo {
+    width: 168px;
+    height: 26px;
+    margin-left: 0;
+    margin-top: 90px;
+    filter: drop-shadow(-5px 3px 3px black);
+  }
+  .price__name {
+    font-size: 17px;
+    margin-left: 0;
+    filter: drop-shadow(0px 6px 3px black);
+  }
+}
 .gallery {
   height: 765px;
   background: url("../img/smoke.png");

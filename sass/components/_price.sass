@@ -56,3 +56,38 @@
         margin-left: 120px
         filter: drop-shadow(0px 16px 10px black)
         padding-bottom: 30px
+@media screen and ( max-width:992px  )    
+    .price
+        height: 800px
+        &__bg
+            display: none
+        &__wrapper
+            width: 360px
+            margin: 0 auto
+            padding-left: 0    
+            margin-top: 40px
+        &__value
+            text-align: center
+            margin-bottom: 64px
+        &__inner
+            margin-top: 50px    
+        &__box
+            display: flex   
+            &-right
+                @include img('../img/rw.png',151px,151px,cover)
+                margin-left: 32px
+                margin-top: 10px
+        &__logo
+            width: 168px
+            height: 26px
+            margin-left: 0
+            margin-top: 90px
+            filter: drop-shadow(-5px 3px 3px black)
+        &__name
+            font-size: 17px
+            margin-left: 0   
+            filter: drop-shadow(0px 6px 3px black) 
+
+
+
+
