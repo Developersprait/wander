@@ -1520,6 +1520,7 @@ input[type=range]::-moz-range-thumb {
 }
 .gallery {
   height: 765px;
+  overflow: hidden;
   background: url("../img/smoke.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1542,6 +1543,40 @@ input[type=range]::-moz-range-thumb {
   margin-bottom: 45px;
 }
 
+@media screen and (max-width: 992px) {
+  .gallery {
+    height: 350px;
+  }
+  .gallery__container {
+    width: 960px;
+  }
+  .gallery__title {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .gallery__slider {
+    overflow: hidden;
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  #range2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gallery__container {
+    max-width: 737px;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .gallery__container {
+    max-width: 435px;
+  }
+}
 .footer {
   height: 186px;
   background: rgba(0, 0, 0, 0.8);
@@ -2348,6 +2383,12 @@ input[type=range]::-moz-range-thumb {
   -webkit-appearance: none;
 }
 
+@media screen and (max-width: 992px) {
+  #sb1, #sb2, #sb3, #sb4, #sb5, #sb6, #sb7, #sb8, #sb9, #sb10, #sb11, #sb12, #sb13, #sb14, #sb15, #sb16, #sb17, #sb18, #sb19, #sb21, #sb22 {
+    width: 306px;
+    height: 182px;
+  }
+}
 .slider5 {
   width: 360px;
   height: 402px;

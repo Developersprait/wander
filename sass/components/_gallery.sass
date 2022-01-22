@@ -2,12 +2,39 @@
 @import '../vars/_mixins'
 .gallery
     height: 765px
+    overflow: hidden
     @include img('../img/smoke.png', 100%, 766px, cover)
     &__container
         width: 1235px
         margin: 0 auto
     &__title
-        @include font($montserrat, 900, 36px, 44px, normal) 
-        text-align: center  
+        @include font($montserrat, 900, 36px, 44px, normal)
+        text-align: center
         margin-top: 100px
         margin-bottom: 45px
+@media screen and ( max-width:992px  )
+    .gallery
+        height: 350px
+        &__container
+            width: 960px
+        &__title
+            width: 200px
+            margin: 0 auto
+            margin-top: 50px
+            margin-bottom: 30px
+        &__slider
+            overflow: hidden
+            width: 360px
+            margin: 0 auto    
+    #range2
+        display: none        
+@media screen and ( max-width: 767px)
+    .gallery
+        &__container
+            max-width: 737px
+            padding: 0 20px
+@media screen and (max-width: 479px)
+    .gallery
+        &__container
+            max-width: 435px
+
