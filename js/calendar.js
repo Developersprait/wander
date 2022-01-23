@@ -28,6 +28,7 @@ function Calendar2(id, year, month) {
     if (document.querySelectorAll('#' + id + ' tbody tr').length < 6) { // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
         document.querySelector('#' + id + ' tbody').innerHTML += '<tr><td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;';
     }
+
 }
 Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
 // переключатель минус месяц
@@ -37,4 +38,24 @@ document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').oncli
 // переключатель плюс месяц
 document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function () {
     Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) + 1);
+}
+
+function minTwoDigits(n) {
+    return (n < 10 ? '0' : '') + n;
+}
+
+const d = document.querySelectorAll('#calendar2 td')
+for (let i = 10; i < d.length; i += 1) {
+    monthes = ["styczeń", "luty", "marzec", "kwiecień", "maj", "czerwiec", "lipiec", "sierpień", "wrzesień", "październik", "listopad", "grudzień"];
+
+    d[i].onclick = function (e) {
+        const day = e.target.innerHTML
+        const yearAndMonth = d[1].innerHTML
+        const year = yearAndMonth.split(' ')[1]
+        const month = monthes.findIndex(m => m === yearAndMonth.split(' ')[0]) + 1
+
+
+        const key = `${minTwoDigits(day)}-${minTwoDigits(month)}-${year}`
+        alert(window.dates[key]);
+    }
 }
