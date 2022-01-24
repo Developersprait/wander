@@ -531,6 +531,18 @@ body {
   .background2 {
     background-position-x: -450px;
   }
+
+  .header2__top__left img {
+    margin-left: 0;
+  }
+
+  .header2__top__mid img {
+    margin-left: 30px;
+  }
+
+  .burger {
+    margin-left: 100px;
+  }
 }
 .menu2 {
   position: fixed;
@@ -602,7 +614,7 @@ body {
 
 @media screen and (max-width: 992px) {
   .menu2 {
-    height: 555px;
+    height: 350px;
     padding: 0;
     background-color: transparent;
     margin-top: 68px;
@@ -629,7 +641,7 @@ body {
     display: block;
     background-color: black;
     color: #DED500;
-    padding: 21px 0;
+    padding: 17px 0;
     text-align: center;
   }
   .menu2 a span {
@@ -1186,8 +1198,6 @@ input[type=range]::-moz-range-thumb {
   color: #fff;
 }
 .plan__item:hover {
-  width: 271px;
-  height: 429px;
   box-shadow: 0px 0px 25px 19px rgba(196, 196, 196, 0.53);
 }
 @media screen and (max-width: 992px) {
@@ -1569,13 +1579,13 @@ input[type=range]::-moz-range-thumb {
 }
 @media screen and (max-width: 767px) {
   .gallery__container {
-    max-width: 737px;
+    max-width: 476px;
     padding: 0 20px;
   }
 }
 @media screen and (max-width: 479px) {
   .gallery__container {
-    max-width: 435px;
+    max-width: 390px;
   }
 }
 .footer {
@@ -1765,7 +1775,7 @@ input[type=range]::-moz-range-thumb {
     margin-right: 11px;
   }
   .footer2__text {
-    font-size: 10px;
+    font-size: 9px;
     width: 240px;
     line-height: 19px;
   }
@@ -1821,6 +1831,14 @@ input[type=range]::-moz-range-thumb {
   color: #fff;
   font-size: 20px;
   cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: 93%;
+  left: 30%;
+  font-size: 13px;
+  background-color: #000;
 }
 
 .slider1 {

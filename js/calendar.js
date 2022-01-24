@@ -1,3 +1,4 @@
+
 function Calendar2(id, year, month) {
     var Dlast = new Date(year, month + 1, 0).getDate(),
         D = new Date(year, month, Dlast),
@@ -33,29 +34,50 @@ function Calendar2(id, year, month) {
 Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
 // переключатель минус месяц
 document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function () {
+
     Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) - 1);
+    update();
 }
 // переключатель плюс месяц
 document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function () {
+
     Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) + 1);
+    update();
 }
 
 function minTwoDigits(n) {
     return (n < 10 ? '0' : '') + n;
 }
 
-const d = document.querySelectorAll('#calendar2 td')
-for (let i = 10; i < d.length; i += 1) {
-    monthes = ["styczeń", "luty", "marzec", "kwiecień", "maj", "czerwiec", "lipiec", "sierpień", "wrzesień", "październik", "listopad", "grudzień"];
+function update() {
+    const d = document.querySelectorAll('#calendar2 td');
+    for (let i = 10; i < d.length; i += 1) {
+        let monthes = ["styczeń", "luty", "marzec", "kwiecień", "maj", "czerwiec", "lipiec", "sierpień", "wrzesień", "październik", "listopad", "grudzień"];
 
-    d[i].onclick = function (e) {
-        const day = e.target.innerHTML
-        const yearAndMonth = d[1].innerHTML
-        const year = yearAndMonth.split(' ')[1]
-        const month = monthes.findIndex(m => m === yearAndMonth.split(' ')[0]) + 1
-
-
-        const key = `${minTwoDigits(day)}-${minTwoDigits(month)}-${year}`
-        alert(window.dates[key]);
+        d[i].onclick = function (event) {
+            const target = event.target;
+            const day = target.innerHTML;
+            const yearAndMonth = d[1].innerHTML;
+            const year = yearAndMonth.split(' ')[1];
+            const month = monthes.findIndex(m => m === yearAndMonth.split(' ')[0]) + 1;
+            const key = `${minTwoDigits(day)}-${minTwoDigits(month)}-${year}`;
+            let tooltipDate = window.dates[key];
+            let attr = "data-tooltipe";
+            if (!tooltipDate) {
+                return;
+            } else {
+                target.setAttribute(attr, `POZOSTAŁO MIEJSC - ${tooltipDate}`);
+                document.querySelectorAll('#calendar2 td span').forEach(e => e.remove());
+                target.appendChild(document.createElement("span"));
+                let span = target.querySelector("span");
+                let data = target.getAttribute("data-tooltipe");
+                span.className = "tooltip";
+                span.style.display = "block";
+                span.innerHTML = data;
+                span.onmousemove.style.display = "none";
+                update();
+            } 
+        };
     }
 }
+update();

@@ -4,24 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function fix() {
         document.addEventListener('scroll', () => {
-            if (window.scrollY > 100 && window.screen.width >= 992) {
+            if (window.scrollY > 20 && window.screen.width >= 992) {
                 document.querySelector('.shedule__btn').classList.add('fixed');
             }
         });
 
     }
 
-    function shedule() {
-        sheduleButton.addEventListener('click', () => {
-            sheduleButton.style.display = 'none';
-            console.log('none');
-        });
-        cross.addEventListener('click',()=>{
-            sheduleButton.style.display = 'block';
-            console.log('clone');
-        });
-    }
+    // function shedule() {
+    //     sheduleButton.addEventListener('click', () => {
+    //         sheduleButton.style.display = 'none';
+    //         console.log('none');
+    //     });
+    //     cross.addEventListener('click',()=>{
+    //         sheduleButton.style.display = 'block';
+    //         console.log('clone');
+    //     });
+    // }
 
     fix();
-    shedule();
+    // shedule();
 });
