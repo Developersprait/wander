@@ -66,7 +66,7 @@ function update() {
             if (!tooltipDate) {
                 return;
             } else {
-                target.setAttribute(attr, `POZOSTAŁO MIEJSC - ${tooltipDate}`);
+                target.setAttribute(attr, `piątek-niedziela: POZOSTAŁO MIEJSC - ${tooltipDate}`);
                 document.querySelectorAll('#calendar2 td span').forEach(e => e.remove());
                 target.appendChild(document.createElement("span"));
                 let span = target.querySelector("span");
