@@ -1744,6 +1744,14 @@ input[type=range]::-moz-range-thumb {
   margin-right: 13px;
 }
 
+.copy {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 9px;
+  color: #fff;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 992px) {
   .footer {
     height: 150px;
@@ -1771,7 +1779,7 @@ input[type=range]::-moz-range-thumb {
     margin-right: 14px;
   }
   .footer__text {
-    font-size: 10px;
+    font-size: 9px;
     line-height: 15px;
     letter-spacing: 1px;
   }
@@ -1801,6 +1809,10 @@ input[type=range]::-moz-range-thumb {
     width: 19px;
     height: 19px;
     margin-right: 7px;
+  }
+
+  .copy {
+    margin-top: 7px;
   }
 }
 @media screen and (max-width: 376px) {
@@ -1907,6 +1919,10 @@ input[type=range]::-moz-range-thumb {
   .el1 {
     display: flex;
   }
+
+  .footer2 .copy {
+    margin-top: 50px;
+  }
 }
 @media screen and (max-width: 376px) {
   .footer2__item2 {
@@ -1915,6 +1931,10 @@ input[type=range]::-moz-range-thumb {
 
   .footer2__soc {
     margin-top: 27px;
+  }
+
+  .footer2 .copy {
+    margin-top: 10px;
   }
 }
 #calendar2 {
