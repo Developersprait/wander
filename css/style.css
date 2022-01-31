@@ -381,8 +381,7 @@ body {
   color: #DED500;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-  font-size: 11px;
-  line-height: 11px;
+  font-size: 16px;
   letter-spacing: 1.1px;
 }
 .header2__top {
@@ -408,7 +407,7 @@ body {
 }
 .header2__top__mid {
   margin-top: 12px;
-  margin-left: -110px;
+  margin-left: -164px;
 }
 .header2__top__mid img {
   width: 57px;
@@ -425,12 +424,15 @@ body {
   height: 24px;
   margin-right: 9px;
 }
+.header2__btn {
+  margin-top: 7px;
+}
 .header2__btn a {
   text-decoration: none;
   color: #DED500;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 16px;
   line-height: 11px;
   letter-spacing: 1.1px;
   text-transform: uppercase;
@@ -487,6 +489,7 @@ body {
   }
   .header2__phone-number {
     margin-top: 3px;
+    font-size: 9px;
   }
   .header2__hero {
     margin-top: 0;
@@ -683,23 +686,26 @@ body {
   }
 }
 .about {
-  height: 417px;
+  height: 690px;
+  padding-bottom: 30px;
+}
+.about__title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  margin-top: 63px;
 }
 .about__wrapper {
   display: flex;
   justify-content: center;
+  margin-bottom: 35px;
 }
 .about__text {
-  margin-top: 98px;
+  margin-top: 35px;
   margin-right: 50px;
-}
-.about__text-title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 43px;
-  letter-spacing: 6px;
-  margin-bottom: 15px;
 }
 .about__text-descr {
   font-family: "Montserrat", sans-serif;
@@ -709,7 +715,7 @@ body {
   letter-spacing: 3.5px;
 }
 .about__slider {
-  margin-top: 136px;
+  margin-top: 42px;
   width: 265%;
 }
 .about__range {
@@ -763,7 +769,7 @@ input[type=range]::-moz-range-thumb {
 
 @media screen and (max-width: 992px) {
   .about {
-    height: 573px;
+    height: 1050px;
   }
   .about__wrapper {
     display: block;
@@ -775,13 +781,13 @@ input[type=range]::-moz-range-thumb {
     margin-bottom: 41px;
   }
   .about__text-title {
-    font-size: 30px;
+    font-size: 21px;
     line-height: 36px;
     letter-spacing: 5px;
   }
   .about__text-descr {
     line-height: 24px;
-    font-size: 16px;
+    font-size: 13px;
   }
   .about__slider {
     max-width: 360px;
@@ -828,7 +834,7 @@ input[type=range]::-moz-range-thumb {
 }
 @media screen and (max-width: 376px) {
   .about {
-    height: 686px;
+    height: 1478px;
   }
   .about__text {
     max-width: 300px;
@@ -1160,6 +1166,7 @@ input[type=range]::-moz-range-thumb {
   background-color: #c4c4c4;
   border-radius: 10px;
   text-align: center;
+  transition: 0.3s all;
 }
 .plan__item-text {
   margin-top: 24px;
@@ -1456,7 +1463,7 @@ input[type=range]::-moz-range-thumb {
   }
 }
 .price {
-  height: 900px;
+  height: 1000px;
 }
 .price__bg {
   background: url("../img/wheel2.png");
@@ -1480,7 +1487,7 @@ input[type=range]::-moz-range-thumb {
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 1.6px;
-  margin-bottom: 126px;
+  margin-bottom: 32px;
 }
 .price__value strong {
   font-weight: 900;
@@ -1526,7 +1533,7 @@ input[type=range]::-moz-range-thumb {
 }
 .price__logo {
   margin-left: 120px;
-  margin-top: 120px;
+  margin-top: 54px;
   background: url("../img/blogo2.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1534,7 +1541,7 @@ input[type=range]::-moz-range-thumb {
   width: 340px;
   height: 53px;
   filter: drop-shadow(-5px 17px 10px black);
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 .price__descr {
   font-family: "Montserrat", sans-serif;
@@ -1553,10 +1560,22 @@ input[type=range]::-moz-range-thumb {
   filter: drop-shadow(0px 16px 10px black);
   padding-bottom: 30px;
 }
+.price__inner {
+  margin-top: 40px;
+}
+.price__note {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  line-height: 27px;
+  margin-bottom: 20px;
+  width: 400px;
+}
 
 @media screen and (max-width: 992px) {
   .price {
-    height: 800px;
+    height: 1125px;
   }
   .price__bg {
     display: none;
@@ -1570,6 +1589,21 @@ input[type=range]::-moz-range-thumb {
   .price__value {
     text-align: center;
     margin-bottom: 64px;
+  }
+  .price__text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    margin-bottom: 28px;
+    width: 422px;
+    line-height: 30px;
+  }
+  .price__note {
+    width: 250px;
+    margin: 0 auto;
+    font-size: 13px;
+    margin-bottom: 30px;
   }
   .price__inner {
     margin-top: 50px;
@@ -1599,6 +1633,14 @@ input[type=range]::-moz-range-thumb {
     margin-left: 0;
     filter: drop-shadow(0px 6px 3px black);
   }
+  .price__img1 {
+    width: 62px;
+    height: 43px;
+  }
+  .price__img2 {
+    width: 62px;
+    height: 43px;
+  }
 }
 @media screen and (max-width: 376px) {
   .price__wrapper {
@@ -1620,6 +1662,14 @@ input[type=range]::-moz-range-thumb {
     width: 100px;
     height: 100px;
     margin-top: 50px;
+  }
+  .price__img1 {
+    width: 62px;
+    height: 35px;
+  }
+  .price__img2 {
+    width: 62px;
+    height: 35px;
   }
 }
 .gallery {
@@ -1687,7 +1737,7 @@ input[type=range]::-moz-range-thumb {
   }
 }
 .footer {
-  height: 186px;
+  height: 200px;
   background: rgba(0, 0, 0, 0.8);
 }
 .footer__wrapper {
@@ -1711,6 +1761,7 @@ input[type=range]::-moz-range-thumb {
   font-size: 14px;
   line-height: 35px;
   letter-spacing: 1.4px;
+  color: #fff;
 }
 .footer__mail {
   display: flex;
@@ -1750,6 +1801,10 @@ input[type=range]::-moz-range-thumb {
   font-size: 9px;
   color: #fff;
   font-weight: 700;
+}
+
+.footer2 .copy {
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1812,7 +1867,7 @@ input[type=range]::-moz-range-thumb {
   }
 
   .copy {
-    margin-top: 7px;
+    margin-top: 18px;
   }
 }
 @media screen and (max-width: 376px) {
@@ -1836,6 +1891,11 @@ input[type=range]::-moz-range-thumb {
   }
   .footer__text {
     font-size: 9px;
+  }
+
+  .b {
+    text-align: center;
+    margin-top: 15px;
   }
 }
 .footer2 {
@@ -2009,7 +2069,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 #slide2 {
-  background: url("../img/cher.jpg");
+  background: url("../img/man.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -2654,7 +2714,8 @@ input[type=range]::-moz-range-thumb {
 #modal-plan1,
 #modal-plan2,
 #modal-plan3,
-#modal-link {
+#modal-link,
+#modal-pol {
   display: none;
 }
 

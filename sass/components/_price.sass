@@ -1,7 +1,7 @@
 @import '../vars/_fonts'
 @import '../vars/_mixins'
 .price
-    height: 900px
+    height: 1000px
     &__bg
         @include img('../img/wheel2.png', 678px, 770px, cover)
         position: absolute
@@ -17,7 +17,7 @@
         font-weight: 700
         font-size: 16px
         letter-spacing: 1.6px
-        margin-bottom: 126px
+        margin-bottom: 32px
         strong
             font-weight: 900
             font-size: 24px
@@ -45,10 +45,10 @@
             font-weight: 900
     &__logo
         margin-left: 120px
-        margin-top: 120px
+        margin-top: 54px
         @include img('../img/blogo2.png', 340px, 53px, cover)
         filter: drop-shadow(-5px 17px 10px black)
-        margin-bottom: 15px
+        margin-bottom: 40px
     &__descr
         @include font($montserrat, 700, 16px, 35px, 1.6px)
     &__name
@@ -56,23 +56,47 @@
         margin-left: 120px
         filter: drop-shadow(0px 16px 10px black)
         padding-bottom: 30px
-@media screen and ( max-width:992px  )    
+    &__inner
+        margin-top: 40px
+    &__note
+        font-family: $montserrat
+        font-weight: 700
+        font-size: 14px
+        letter-spacing: 1.4px
+        line-height: 27px
+        margin-bottom: 20px
+        width: 400px
+
+@media screen and ( max-width:992px  )
     .price
-        height: 800px
+        height: 1125px
         &__bg
             display: none
         &__wrapper
             width: 360px
             margin: 0 auto
-            padding-left: 0    
+            padding-left: 0
             margin-top: 40px
         &__value
             text-align: center
             margin-bottom: 64px
+        &__text
+            font-family: $montserrat
+            font-weight: 700
+            font-size: 16px
+            letter-spacing: 1.6px
+            margin-bottom: 28px
+            width: 422px
+            line-height: 30px
+        &__note
+            width: 250px    
+            margin: 0 auto
+            font-size: 13px
+            margin-bottom: 30px
         &__inner
-            margin-top: 50px    
+            margin-top: 50px
         &__box
-            display: flex   
+            display: flex
             &-right
                 @include img('../img/rw.png',151px,151px,cover)
                 margin-left: 32px
@@ -85,26 +109,34 @@
             filter: drop-shadow(-5px 3px 3px black)
         &__name
             font-size: 17px
-            margin-left: 0   
-            filter: drop-shadow(0px 6px 3px black) 
-@media screen and (max-width: 376px)    
+            margin-left: 0
+            filter: drop-shadow(0px 6px 3px black)
+        &__img1
+            width: 62px
+            height: 43px   
+        &__img2
+            width: 62px
+            height: 43px     
+@media screen and (max-width: 376px)
     .price
         &__wrapper
-            width: 300px       
+            width: 300px
         &__value
-            font-size: 11px     
+            font-size: 11px
         &__title
-            font-size: 29px    
+            font-size: 29px
         &__logo
             width: 100px
-            height: 15px    
+            height: 15px
             margin-left: 18px
             margin-top: 78px
         &__box-right
             width: 100px
-            height: 100px    
+            height: 100px
             margin-top: 50px
-
-
-
-
+        &__img1
+            width: 62px
+            height: 35px   
+        &__img2
+            width: 62px
+            height: 35px     
