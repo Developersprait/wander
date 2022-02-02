@@ -162,8 +162,25 @@
             </div>
         </div>
     </footer>
+    <div id="modal-pol">
+        <span>Polityka prywatności</span>
+        <p>Jednocześnie, zgodnie z art. 13 Ogólnego rozporządzenia o ochronie danych z dnia 27 kwietnia 2016 r. (RODO)
+        informujemy, że BELMEDTOUR jest administratorem Państwa danych osobowych. Państwa dane przetwarzamy w celu
+        obsługi zapytania i umożliwienia nam kontaktu z Państwem np. drogą elektroniczną, telefonicznie, drogą pocztową.
+        Dane będą przetwarzane na podstawie art. 6 ust. 1 lit. a i lit. f RODO do czasu cofnięcia zgody lub czytelnego
+        dla nas zamknięcia rozmów z Państwem, nie dłużej jednak niż do czasu zrealizowania celu przetwarzania. Państwa
+        dane osobowe mogą być przekazywane usługodawcom zewnętrznym przetwarzającym informacje dla Nas, w tym podmiotom
+        świadczącym obsługę prawną i IT, usługi hostingowe, operatorom pocztowym (kurierom) i innym osobom, którym
+        została zawarta umowa powierzenia przetwarzania. Nie będziemy przetwarzali Państwa danych osobowych w sposób
+        automatyczny, jak również nie będą one przez nas profilowane. Posiadają Państwo prawo dostępu do treści swoich
+        danych oraz prawo ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia, cofnięcia zgody w
+        dowolnym momencie bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej
+        cofnięciem, a także prawo wniesienia sprzeciwu czy skargi do organu nadzorczego gdy uznają Państwo, że
+        przetwarzanie danych osobowych narusza przepisy RODO. Podanie danych jest dobrowolne, lecz niezbędne do obsługi
+        zapytania.</p>
+    </div>
     <div id="modal-shedule">
-        <table id="calendar2">
+        <!-- <table id="calendar2">
             <thead>
                 <tr>
                     <td id="lar">&larr;
@@ -178,7 +195,9 @@
                     <td>so
                     <td>nd
             <tbody>
-        </table>
+        </table> -->
+        <div class="calendar">
+        </div>
     </div>
     <div id="modal-pol">
         Polityka prywatności
@@ -198,6 +217,22 @@
         przetwarzanie danych osobowych narusza przepisy RODO. Podanie danych jest dobrowolne, lecz niezbędne do obsługi
         zapytania.
     </div>
+    <div id="modal-phone">
+        <form onsubmit="mail.php" method="POST">
+            <div class="form__title">MASZ PYTANIE ? NAPISZ DO NAS</div>
+            <input type="text" name="user_name" placeholder="Imię" required>
+            <input type="text" name="user_surname" placeholder="Nazwisko" required>
+            <input type="text" name="user_phone" placeholder="Nr telefonu" required>
+            <input type="text" name="user_mail" placeholder="E-mail" required>
+            <input type="submit" id="submit" value="Wyślij" onclick="$.fancybox.close();">
+            <div class="form__info">Szanowni Państwo, dziękujemy za kontakt z nami. Postaramy się odpowiedzieć na
+                przesłane zapytanie w jak najszybszym czasie.</div>
+            <div class="form__polit">
+                <a data-fancybox data-src="#modal-pol" href="javascript:;">polityka
+                    prywatności</a>
+            </div>
+        </form>
+    </div>
     <div class="circle">
         <a data-fancybox data-src="#modal-phone" href="javascript:;" id="popup__toggle">
             <div class="circlephone" style="transform-origin: center;"></div>
@@ -207,6 +242,7 @@
             </div>
         </a>
     </div>
+    
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -214,7 +250,7 @@
     <script src="js/animate.js"></script>
     <script src="js/slider1.js"></script>
     <script src="js/slider2.js"></script>
-    <script src="js/calendar.js"></script>
+    <script src="calendar.js"></script>
     <script src="js/toggle.js"></script>
     <script src="js/menu.js"></script>
     <script src="dates.js"></script>

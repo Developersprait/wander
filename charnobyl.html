@@ -62,7 +62,7 @@
                         <li><a href="#zasady">ZASADY </a></li>
                         <li><a href="#cena">CENA</a></li>
                         <li><a href="#galleria">GALERIA</a></li>
-                        <li><a href="#galleria">FAQ</a></li>
+                        <li><a href="faq.pdf">FAQ</a></li>
                         <li><a class="hidden" href="index.html">GŁÓWNA</a></li>
                     </ul>
                 </div>
@@ -430,7 +430,7 @@
         </div>
     </footer>
     <div id="modal-shedule">
-        <table id="calendar2">
+        <!-- <table id="calendar2">
             <thead>
                 <tr>
                     <td id="lar">&larr;
@@ -445,7 +445,9 @@
                     <td>so
                     <td>nd
             <tbody>
-        </table>
+        </table> -->
+        <div class="calendar">
+        </div>
     </div>
     <div id="modal-plan1">
         <span>Dzień 1</span>
@@ -655,10 +657,25 @@
 
 
     </div>
+    <div id="modal-phone">
+        <form onsubmit="mail.php" method="POST">
+            <div class="form__title">MASZ PYTANIE ? NAPISZ DO NAS</div>
+            <input type="text" name="user_name" placeholder="Imię" required>
+            <input type="text" name="user_surname" placeholder="Nazwisko" required>
+            <input type="text" name="user_phone" placeholder="Nr telefonu" required>
+            <input type="text" name="user_mail" placeholder="E-mail" required>
+            <input type="submit" id="submit" value="Wyślij" onclick="$.fancybox.close();">
+            <div class="form__info">Szanowni Państwo, dziękujemy za kontakt z nami. Postaramy się odpowiedzieć na
+                przesłane zapytanie w jak najszybszym czasie.</div>
+            <div class="form__polit">
+                <a data-fancybox data-src="#modal-pol" href="javascript:;">polityka
+                    prywatności</a>
+            </div>
+        </form>
+    </div>
     <div id="modal-pol">
-        Polityka prywatności
-
-        Jednocześnie, zgodnie z art. 13 Ogólnego rozporządzenia o ochronie danych z dnia 27 kwietnia 2016 r. (RODO)
+        <span>Polityka prywatności</span>
+        <p>Jednocześnie, zgodnie z art. 13 Ogólnego rozporządzenia o ochronie danych z dnia 27 kwietnia 2016 r. (RODO)
         informujemy, że BELMEDTOUR jest administratorem Państwa danych osobowych. Państwa dane przetwarzamy w celu
         obsługi zapytania i umożliwienia nam kontaktu z Państwem np. drogą elektroniczną, telefonicznie, drogą pocztową.
         Dane będą przetwarzane na podstawie art. 6 ust. 1 lit. a i lit. f RODO do czasu cofnięcia zgody lub czytelnego
@@ -671,7 +688,7 @@
         dowolnym momencie bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej
         cofnięciem, a także prawo wniesienia sprzeciwu czy skargi do organu nadzorczego gdy uznają Państwo, że
         przetwarzanie danych osobowych narusza przepisy RODO. Podanie danych jest dobrowolne, lecz niezbędne do obsługi
-        zapytania.
+        zapytania.</p>
     </div>
     <div class="circle">
         <a data-fancybox data-src="#modal-phone" href="javascript:;" id="popup__toggle">
@@ -688,7 +705,7 @@
     <script src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="dates.js"></script>
-    <script src="js/calendar.js"></script>
+    <script src="calendar.js"></script>
     <script src="js/slider3.js"></script>
     <script src="js/slider4.js"></script>
     <script src="js/slider5.js"></script>

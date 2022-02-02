@@ -769,7 +769,7 @@ input[type=range]::-moz-range-thumb {
 
 @media screen and (max-width: 992px) {
   .about {
-    height: 1050px;
+    height: 1345px;
   }
   .about__wrapper {
     display: block;
@@ -1809,7 +1809,7 @@ input[type=range]::-moz-range-thumb {
 
 @media screen and (max-width: 992px) {
   .footer {
-    height: 150px;
+    height: 162px;
   }
   .footer__back {
     background: url("../img/mount.jpg");
@@ -1819,6 +1819,7 @@ input[type=range]::-moz-range-thumb {
     width: 100%;
     height: 150px;
     background-position: bottom;
+    height: 162px;
   }
   .footer__wrapper {
     width: 360px;
@@ -2715,37 +2716,35 @@ input[type=range]::-moz-range-thumb {
 #modal-plan2,
 #modal-plan3,
 #modal-link,
-#modal-pol {
+#modal-pol,
+#modal-phone {
   display: none;
 }
 
 #modal-shedule {
-  width: 375px;
-  height: 375px;
+  width: 360px;
+  height: 600px;
   border: solid 5px #fff;
   padding: 0;
+  margin: 0 auto;
   margin-top: 133px;
-  background: url("../img/ch6.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  width: 375px;
-  height: 375px;
   position: fixed;
-  right: 0;
   cursor: default;
-}
-#modal-shedule .fancybox-button {
+  right: 0;
   left: 0;
 }
+#modal-shedule .fancybox-button {
+  right: 0;
+}
 #modal-shedule .fancybox-button svg {
-  color: #fff;
+  color: #DED500;
 }
 
 #modal-plan1,
 #modal-plan2,
 #modal-plan3,
-#modal-link {
+#modal-link,
+#modal-pol {
   width: 822px;
   margin-top: 179px;
   padding: 80px;
@@ -2753,7 +2752,8 @@ input[type=range]::-moz-range-thumb {
 #modal-plan1 span,
 #modal-plan2 span,
 #modal-plan3 span,
-#modal-link span {
+#modal-link span,
+#modal-pol span {
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -2763,7 +2763,8 @@ input[type=range]::-moz-range-thumb {
 #modal-plan1 p,
 #modal-plan2 p,
 #modal-plan3 p,
-#modal-link p {
+#modal-link p,
+#modal-pol p {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -2772,18 +2773,112 @@ input[type=range]::-moz-range-thumb {
   margin: 20px 0;
 }
 
+.calendar {
+  font-family: "Montserrat", sans-serif;
+}
+.calendar__top {
+  background-color: #000;
+  color: #DED500;
+  font-size: 12px;
+  padding: 50px;
+}
+.calendar__bottom {
+  text-align: center;
+}
+.calendar__bottom p {
+  margin: 0;
+  margin-top: 3px;
+}
+.calendar__title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.calendar__text {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+#modal-phone {
+  width: 400px;
+  padding: 40px;
+  background-color: #000;
+}
+#modal-phone input {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  height: 40px;
+  border: 1px solid #ded500;
+  padding: 0px 10px;
+  background-color: #000;
+  color: #DED500;
+  font-family: "Montserrat", sans-serif;
+}
+#modal-phone input::-moz-placeholder {
+  color: #DED500;
+}
+#modal-phone input:-ms-input-placeholder {
+  color: #DED500;
+}
+#modal-phone input::placeholder {
+  color: #DED500;
+}
+#modal-phone input[type=submit] {
+  width: 140px;
+  border-radius: 20px;
+  height: 30px;
+  transition: 0.3s all;
+}
+#modal-phone input[type=submit]:hover {
+  background-color: #DED500;
+  color: #000;
+}
+
+#modal-phone .fancybox-button {
+  color: #DED500;
+}
+
+.form__title {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+.form__info {
+  font-family: "Montserrat", sans-serif;
+  color: #DED500;
+  color: #fff;
+  font-weight: 400;
+  text-align: left;
+  font-size: 14px;
+}
+
+.form__polit {
+  text-align: center;
+}
+.form__polit a {
+  font-family: "Montserrat", sans-serif;
+  color: #DED500;
+  font-size: 10px;
+}
+
 @media screen and (max-width: 992px) {
   #modal-shedule {
     margin: 0 auto;
-    margin-top: 100px;
     right: 0;
     left: 0;
+    height: 700px;
   }
 
   #modal-plan1,
 #modal-plan2,
 #modal-plan3,
-#modal-link {
+#modal-link,
+#modal-pol {
     width: 360px;
     margin-top: 10px;
     padding: 30px;
@@ -2795,9 +2890,15 @@ input[type=range]::-moz-range-thumb {
   #modal-plan1 p,
 #modal-plan2 p,
 #modal-plan3 p,
-#modal-link p {
+#modal-link p,
+#modal-pol p {
     font-size: 13px;
     letter-spacing: 1.1px;
     font-weight: 500;
+  }
+}
+@media screen and (max-width: 479px) {
+  #modal-phone input {
+    width: 220px;
   }
 }/*# sourceMappingURL=style.css.map */

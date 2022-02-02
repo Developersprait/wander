@@ -5,26 +5,29 @@
 #modal-plan2,
 #modal-plan3,
 #modal-link,
-#modal-pol
+#modal-pol,
+#modal-phone
     display: none
 #modal-shedule
-    width: 375px
-    height: 375px
+    width: 360px
+    height: 600px
     border: solid 5px #fff
     padding: 0
+    margin: 0 auto
     margin-top: 133px
-    @include img('../img/ch6.jpg', 375px, 375px, cover)
     position: fixed
-    right: 0
     cursor: default
+    right: 0
+    left: 0
     .fancybox-button
-        left: 0
+        right: 0
         svg
-            color: #fff
+            color: $yellow
 #modal-plan1,
 #modal-plan2,
 #modal-plan3,
-#modal-link
+#modal-link,
+#modal-pol
     width: 822px
     margin-top: 179px
     padding: 80px
@@ -41,16 +44,86 @@
         letter-spacing: 1.6px
         line-height: 30px
         margin: 20px 0
+.calendar
+    font-family: $montserrat
+    &__top
+        background-color: #000
+        color: $yellow
+        font-size: 12px
+        padding: 50px
+    &__bottom
+        text-align: center
+        p
+            margin: 0
+            margin-top: 3px
+    &__title
+        font-size: 25px
+        font-weight: 600
+        margin-top: 20px
+    &__text
+        font-size: 15px
+        margin-top: 10px
+#modal-phone
+    width: 400px
+    // height: 924px
+    padding: 40px
+    background-color: #000
+    input
+        display: block
+        width: 280px
+        margin: 0 auto
+        margin-bottom: 20px
+        height: 40px
+        border: 1px solid #ded500
+        padding: 0px 10px
+        background-color: #000
+        color: $yellow
+        font-family: $montserrat
+    input::placeholder
+        color: $yellow
+    input[type="submit"]
+        width: 140px
+        border-radius: 20px
+        height: 30px
+        transition: 0.3s all
+    input[type="submit"]:hover
+        background-color: $yellow
+        color: #000
+     
+#modal-phone .fancybox-button
+    color: $yellow
+
+.form__title
+    font-family: $montserrat
+    color: #fff
+    text-align: center
+    margin-bottom: 50px
+    font-weight: 500
+.form__info
+    font-family: $montserrat
+    color: $yellow
+    color: #fff
+    font-weight: 400
+    text-align: left
+    font-size: 14px
+.form__polit
+    text-align: center  
+    a
+        font-family: $montserrat
+        color: $yellow
+        font-size: 10px  
+
 @media screen and ( max-width:992px  )
     #modal-shedule
         margin: 0 auto
-        margin-top: 100px
         right: 0
         left: 0
+        height: 700px
     #modal-plan1,
     #modal-plan2,
     #modal-plan3,
-    #modal-link
+    #modal-link,
+    #modal-pol
         width: 360px
         margin-top: 10px
         padding: 30px
@@ -59,8 +132,9 @@
         background-repeat: repeat-y
         background-position-x: -611px
         p
-          font-size: 13px
-          letter-spacing: 1.1px 
-          font-weight: 500 
-        
-
+            font-size: 13px
+            letter-spacing: 1.1px
+            font-weight: 500
+@media screen and (max-width: 479px)
+    #modal-phone input    
+        width: 220px        
