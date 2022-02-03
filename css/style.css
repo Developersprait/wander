@@ -665,7 +665,7 @@ body {
     display: block;
     background-color: black;
     color: #DED500;
-    padding: 17px 0;
+    padding: 13px 0;
     text-align: center;
   }
   .menu2 a span {
@@ -773,6 +773,7 @@ input[type=range]::-moz-range-thumb {
   }
   .about__wrapper {
     display: block;
+    margin-bottom: 0;
   }
   .about__text {
     margin: 0 auto;
@@ -788,14 +789,20 @@ input[type=range]::-moz-range-thumb {
   .about__text-descr {
     line-height: 24px;
     font-size: 13px;
+    width: 320px;
+    margin: 0 auto;
   }
   .about__slider {
-    max-width: 360px;
+    position: absolute;
+    top: 1935px;
+    max-width: 300px;
     margin: 0 auto;
+    left: 0;
+    right: 0;
     margin-top: 0;
   }
   .about__range {
-    margin-top: 32px;
+    margin-top: 10px;
   }
 
   input[type=range] {
@@ -834,13 +841,22 @@ input[type=range]::-moz-range-thumb {
 }
 @media screen and (max-width: 376px) {
   .about {
-    height: 1478px;
+    height: 1360px;
   }
   .about__text {
-    max-width: 300px;
+    max-width: 320px;
+    margin-bottom: 10px;
   }
   .about__slider {
-    max-width: 237px;
+    max-width: 243px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 1947px;
+  }
+
+  input[type=range] {
+    width: 234px;
   }
 }
 .tour {
@@ -1397,6 +1413,18 @@ input[type=range]::-moz-range-thumb {
 .rules__item-l {
   margin-bottom: 45px;
 }
+.rules__item-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.rules__links {
+  width: 310px;
+  margin-left: 90px;
+  margin-bottom: 40px;
+}
+.rules__links a {
+  color: #000;
+}
 
 @media screen and (max-width: 992px) {
   .rules {
@@ -1408,7 +1436,7 @@ input[type=range]::-moz-range-thumb {
     height: 1362px;
     background-position-x: 80%;
     width: 100%;
-    height: 2000px;
+    height: 2205px;
     overflow: hidden;
   }
   .rules__radiation {
@@ -1444,10 +1472,13 @@ input[type=range]::-moz-range-thumb {
     letter-spacing: 1.4px;
     font-weight: 600;
   }
+  .rules__links {
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 376px) {
   .rules {
-    height: 2156px;
+    height: 2648px;
   }
   .rules__radiation {
     width: 280px;
@@ -1873,10 +1904,10 @@ input[type=range]::-moz-range-thumb {
 }
 @media screen and (max-width: 376px) {
   .footer {
-    height: 204px;
+    height: 235px;
   }
   .footer__back {
-    height: 204px;
+    height: 235px;
   }
   .footer__wrapper {
     display: block;
@@ -2789,6 +2820,12 @@ input[type=range]::-moz-range-thumb {
   margin: 0;
   margin-top: 3px;
 }
+.calendar__bottom p span {
+  position: absolute;
+  color: #ded500;
+  top: 174px;
+  left: 91px;
+}
 .calendar__title {
   font-size: 25px;
   font-weight: 600;
@@ -2797,6 +2834,10 @@ input[type=range]::-moz-range-thumb {
 .calendar__text {
   font-size: 15px;
   margin-top: 10px;
+  transition: 0.3s all;
+}
+.calendar__text p:hover {
+  color: #DED500;
 }
 
 #modal-phone {

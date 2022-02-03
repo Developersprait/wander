@@ -56,6 +56,11 @@
         p
             margin: 0
             margin-top: 3px
+            span
+                position: absolute
+                color: #ded500
+                top: 174px
+                left: 91px
     &__title
         font-size: 25px
         font-weight: 600
@@ -63,6 +68,10 @@
     &__text
         font-size: 15px
         margin-top: 10px
+        transition: 0.3s all
+    &__text
+        p:hover
+            color: $yellow
 #modal-phone
     width: 400px
     // height: 924px
@@ -89,7 +98,7 @@
     input[type="submit"]:hover
         background-color: $yellow
         color: #000
-     
+
 #modal-phone .fancybox-button
     color: $yellow
 
@@ -107,11 +116,11 @@
     text-align: left
     font-size: 14px
 .form__polit
-    text-align: center  
+    text-align: center
     a
         font-family: $montserrat
         color: $yellow
-        font-size: 10px  
+        font-size: 10px
 
 @media screen and ( max-width:992px  )
     #modal-shedule
@@ -136,5 +145,5 @@
             letter-spacing: 1.1px
             font-weight: 500
 @media screen and (max-width: 479px)
-    #modal-phone input    
-        width: 220px        
+    #modal-phone input
+        width: 220px

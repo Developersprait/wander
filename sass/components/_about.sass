@@ -74,6 +74,7 @@ input[type=range]::-moz-range-thumb
         height: 1345px
         &__wrapper
             display: block
+            margin-bottom: 0
         &__text
             margin: 0 auto
             max-width: 360px
@@ -86,12 +87,18 @@ input[type=range]::-moz-range-thumb
             &-descr
                 line-height: 24px
                 font-size: 13px
+                width: 320px
+                margin: 0 auto
         &__slider
-            max-width: 360px
+            position: absolute
+            top: 1935px
+            max-width: 300px
             margin: 0 auto
+            left: 0
+            right: 0
             margin-top: 0
         &__range
-            margin-top: 32px
+            margin-top: 10px
     input[type=range]
         width: 300px
         height: 48px
@@ -123,8 +130,15 @@ input[type=range]::-moz-range-thumb
         -webkit-appearance: none
 @media screen and (max-width: 376px)
     .about
-        height: 1478px
+        height: 1360px
         &__text
-            max-width: 300px
+            max-width: 320px
+            margin-bottom: 10px
         &__slider
-            max-width: 237px
+            max-width: 243px
+            margin: 0 auto
+            left: 0
+            right: 0
+            top: 1947px
+    input[type=range]
+        width: 234px        
