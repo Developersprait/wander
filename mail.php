@@ -9,7 +9,7 @@ $surname = $_POST['user_surname'];
 $email = $_POST['user_mail'];
 $phone = $_POST['user_phone'];
 
-$mail->SMTPDebug = 3;                               // Enable verbose debug output
+//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'wanderers-extreme.pl';  																							// Specify main and backup SMTP servers
@@ -20,7 +20,7 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
 $mail->setFrom('admin@wanderers-extreme.pl'); // от кого будет уходить письмо?
-$mail->addAddress('sashavityaz1993@gmail.com');     // Кому будет уходить письмо 
+$mail->addAddress('doctorsprait@gmail.com');     // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');

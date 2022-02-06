@@ -1478,7 +1478,7 @@ input[type=range]::-moz-range-thumb {
 }
 @media screen and (max-width: 376px) {
   .rules {
-    height: 2648px;
+    height: 3037px;
   }
   .rules__radiation {
     width: 280px;
@@ -1487,10 +1487,12 @@ input[type=range]::-moz-range-thumb {
     width: 300px;
   }
   .rules__item {
-    width: 300px;
+    width: 248px;
   }
   .rules__item-img1, .rules__item-img2, .rules__item-img3, .rules__item-img4, .rules__item-img5, .rules__item-img6, .rules__item-img7, .rules__item-img8 {
     height: 25px;
+    width: 37px;
+    margin-right: 12px;
   }
 }
 .price {
