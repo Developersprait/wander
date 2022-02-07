@@ -12,9 +12,7 @@ const luty = `25.02.2022 - 27.02.2022`, //февраль
     ];
 calendar.innerHTML = `
 <div class="calendar__top">
-Wyjazd liczony jest na 3 dni od piątku do niedzieli. 
-Termin następnej wycieczki  25.02 - 27.02. 
-Liczbę wolnych miejsc można sprawdzić w kalendarzu klikając w wybrany termin wydarzenia. W celu wzięcia udziału w wycieczce prosimy o kontakt.
+Wyjazd liczony jest na 3 dni od piątku do niedzieli.Termin następnej wycieczki  25.02 - 27.02.2022. Liczbę wolnych miejsc można sprawdzić w kalendarzu klikając w wybrany termin wydarzenia. W celu wzięcia udziału w wycieczce prosimy o kontakt.
 </div>
 <div class="calendar__bottom">
     <div class="calendar__items">
@@ -53,15 +51,15 @@ Liczbę wolnych miejsc można sprawdzić w kalendarzu klikając w wybrany termin
 `;
 // места на выходные
 const weeks = {
-    w1:10,//25.02.2022 - 27.02.2022
-    w2:8,//
-    w3:12,
-    w4:11,
-    w5:54,
-    w6:33,
-    w7:9,
-    w8:15,
-    w9:14
+    w1: 10, //25.02.2022 - 27.02.2022
+    w2: 8, //
+    w3: 12,
+    w4: 11,
+    w5: 54,
+    w6: 33,
+    w7: 9,
+    w8: 15,
+    w9: 14
 };
 const d1 = document.querySelector("#d1"),
     d2 = document.querySelector("#d2"),
@@ -77,7 +75,7 @@ d1.addEventListener("click", (e) => {
     document.querySelectorAll('.calendar__text p span').forEach(e => e.remove());
     target.appendChild(document.createElement("span"));
     let span = target.querySelector("span");
-    span.innerHTML = `POZOSTAŁO MIEJSC - ${weeks.w1}` ; //первая неделя
+    span.innerHTML = `POZOSTAŁO MIEJSC - ${weeks.w1}`; //первая неделя
 });
 d1.addEventListener("touchend", (e) => {
     const target = e.target;

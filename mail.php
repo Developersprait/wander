@@ -14,13 +14,13 @@ $phone = $_POST['user_phone'];
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'wanderers-extreme.pl';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'admin@wanderers-extreme.pl'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'sashaVityaz0805#'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = 'wander@wanderers-extreme.pl'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = '4WNFehc6iZmy2KG'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('admin@wanderers-extreme.pl'); // от кого будет уходить письмо?
-$mail->addAddress('doctorsprait@gmail.com');     // Кому будет уходить письмо 
+$mail->setFrom('wander@wanderers-extreme.pl'); // от кого будет уходить письмо?
+$mail->addAddress('sashavityaz1993@gmail.com');     // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
